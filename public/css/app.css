@@ -1,0 +1,71 @@
+/* Colors */
+/* Fonts */
+body,
+html {
+  margin: 0px !important;
+  color: #000000;
+  height: 100%;
+  font-size: 14px;
+}
+*:focus {
+  outline: none;
+}
+.navbar {
+  z-index: 100;
+  background: rgba(249, 229, 188, 0.5) !important;
+}
+.navbar .navbar-brand {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 40px;
+  color: #228b22 !important;
+}
+.navbar .navbar-brand.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  margin-left: -80px;
+}
+@media (max-width: 770px) {
+  .navbar .navbar-brand.navbar-brand-centered {
+    position: relative;
+    left: initial;
+    width: initial;
+    margin-left: initial;
+  }
+}
+.navbar .navbar-toggler {
+  border: none;
+}
+.navbar .nav-item {
+  font-size: 1.2rem;
+  color: #000000;
+}
+.navbar .nav-item + .nav-item {
+  margin-left: 20px;
+}
+@media (max-width: 770px) {
+  .navbar .nav-item + .nav-item {
+    margin-left: initial;
+  }
+}
+.navbar .nav-right {
+  margin-right: 25%;
+}
+@media (max-width: 770px) {
+  .navbar .nav-right {
+    margin-right: initial;
+  }
+}
+.navbar .nav-left {
+  margin-left: 25%;
+}
+@media (max-width: 770px) {
+  .navbar .nav-left {
+    margin-left: initial;
+  }
+}
+.page-body {
+  height: 100vh;
+}

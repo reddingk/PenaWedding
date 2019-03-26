@@ -1,0 +1,57 @@
+@mobile-device: ~"(max-width: 770px)";
+
+/* Colors */
+@color1: rgba(34,139,34,1);
+.color1(@prop,@val){ @{prop}: rgba(34,139,34,@val) !important; }
+
+/* Fonts */
+@font-size: 14px;
+
+@import "home.less";
+
+body, html { 
+    margin: 0px !important;
+    color: rgba(0,0,0,1);
+    height: 100%;
+    font-size: @font-size;
+    
+}
+*:focus { outline: none;}
+
+.navbar {
+    z-index: 100;
+    background: rgba(249,229,188,0.5) !important;
+    .navbar-brand {
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 40px;
+        color: @color1 !important;
+
+        &.navbar-brand-centered {
+            position: absolute;
+            left: 50%;
+            display: block;
+            width: 160px;
+            text-align: center;
+
+            margin-left: -80px;
+
+            @media @mobile-device { position: relative; left: initial; width: initial; margin-left: initial;  }
+        }
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+    .nav-item {
+        font-size: 1.2rem;
+        color: rgba(0,0,0,1);
+        &+.nav-item { margin-left: 20px; @media @mobile-device { margin-left: initial; }}
+    }
+
+    .nav-right { margin-right: 25%; @media @mobile-device { margin-right: initial; }}
+    .nav-left { margin-left: 25%; @media @mobile-device { margin-left: initial; }}
+}
+
+.page-body {
+    height: 100vh;
+}
