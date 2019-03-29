@@ -4,8 +4,17 @@
 @color1: rgba(34,139,34,1);
 .color1(@prop,@val){ @{prop}: rgba(34,139,34,@val) !important; }
 
+@color2: rgba(220,220,220,1);
+.color2(@prop,@val){ @{prop}: rgba(220,220,220,@val) !important; }
+
+@color3: rgba(252,221,201,1);
+.color3(@prop,@val){ @{prop}: rgba(252,221,201,@val) !important; }
+
 /* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Kristi|Loved+by+the+King|Sacramento|Kaushan+Script');
 @font-size: 14px;
+
+@navHeight: 59px;
 
 @import "home.less";
 
@@ -13,14 +22,25 @@ body, html {
     margin: 0px !important;
     color: rgba(0,0,0,1);
     height: 100%;
-    font-size: @font-size;
+    font-size: @font-size;    
     
+    //font-family: 'Kristi', cursive;
+    //font-family: 'Homemade Apple', cursive;
+    //font-family: 'Sacramento', cursive;
+    //font-family: 'Loved by the King', cursive;
+   
 }
 *:focus { outline: none;}
 
-.navbar {
+.navbar {        
     z-index: 100;
-    background: rgba(249,229,188,0.5) !important;
+    background: @color3 !important;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
+	   -moz-box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
+            box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
+            
     .navbar-brand {
         font-family: 'Reenie Beanie', cursive;
         font-size: 40px;
@@ -37,14 +57,29 @@ body, html {
 
             @media @mobile-device { position: relative; left: initial; width: initial; margin-left: initial;  }
         }
+
+        .initialLogo {
+            padding-top: 40px;
+            .initial-wrapper{
+                background: rgba(255,255,255,1);
+                width: 67px;
+                height: 67px;
+                border-radius: 50%;
+                display: inline-block;
+                font-family: 'Kristi', cursive;
+                border: 1px dashed #ddd;
+                box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+            }
+        }
     }
 
     .navbar-toggler {
         border: none;
     }
     .nav-item {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         color: rgba(0,0,0,1);
+        font-family: 'Loved by the King', cursive;
         &+.nav-item { margin-left: 20px; @media @mobile-device { margin-left: initial; }}
     }
 
@@ -53,5 +88,38 @@ body, html {
 }
 
 .page-body {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: @navHeight;
+}
+h1 { font-family: 'Loved by the King', cursive; }
+
+.border-style1 {
+    padding: 20px 7px;
+    border: 1px dashed #ddd;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+
+    &.c1 { border: 1px dashed @color1; box-shadow: 0 0 0 3px #fff, 0 0 0 5px @color1, 0 0 0 10px #fff, 0 0 2px 10px rgba(34,139,34,0.3);}
+}
+/* carousel */
+.site-carousel {
+    .carousel {
+        width: 100%;
+        height: 100%;
+        .slider-wrapper {
+            width: 100%;
+            height: 100%;
+            .slider {
+                width: 100%;
+                height: 100%;
+                .slide  {
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    display: flex;
+                    justify-content: center;
+                    .carousel-page { display: block; text-align: center; }
+                }
+            }
+        }
+    }
 }

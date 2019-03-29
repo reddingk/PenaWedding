@@ -1,5 +1,165 @@
 /* Colors */
 /* Fonts */
+@font-face {
+  font-family: 'Homemade Apple';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Homemade Apple Regular'), local('HomemadeApple-Regular'), url(https://fonts.gstatic.com/s/homemadeapple/v9/Qw3EZQFXECDrI2q789EKQZJob0x6XH0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(https://fonts.gstatic.com/s/kaushanscript/v7/vm8vdRfvXFLG3OLnsO15WYS5DG74wNc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kristi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v10/uK_y4ricdeU6zwdhDRcX.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Loved by the King';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Loved by the King'), local('LovedbytheKing'), url(https://fonts.gstatic.com/s/lovedbytheking/v8/Gw6gwdP76VDVJNXerebZxUMeRXUF2MiKn3U.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sacramento'), local('Sacramento-Regular'), url(https://fonts.gstatic.com/s/sacramento/v6/buEzpo6gcdjy0EiZMBUG4C0f-A.ttf) format('truetype');
+}
+.home .landing {
+  width: 100%;
+  height: calc(100vh - 59px);
+  position: relative;
+}
+.home .landing .back-img {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .landing .back-img .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.4);
+}
+.home .landing .back-img img {
+  min-width: 100%;
+  height: 100%;
+}
+.home .landing .main-carousel {
+  width: 100%;
+  height: 100%;
+}
+.home .landing .main-carousel .carousel-img-container {
+  display: inline-block;
+  width: 55%;
+  background: #ffffff;
+  padding: 10px;
+}
+.home .landing .main-carousel .carousel-img-container .carousel-img {
+  width: 100%;
+}
+.home .section {
+  background: #ffffff;
+  padding: 40px 5% 70px;
+}
+.home .section.welcome {
+  text-align: center;
+}
+.home .section.welcome p {
+  font-size: 1.3rem;
+}
+.home .spacer {
+  width: 100%;
+  height: calc(70vh);
+  position: relative;
+}
+.home .spacer.right {
+  text-align: right;
+}
+.home .spacer .back-img {
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home .spacer .back-img .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.4);
+}
+.home .spacer .back-img img {
+  min-width: 100%;
+  height: 100%;
+}
+.home .spacer .date {
+  font-weight: 900;
+  font-size: 500px;
+  line-height: 250px;
+  padding: 0px 5%;
+  display: block;
+  color: #ffffff;
+  position: relative;
+}
+.home .spacer .date .number {
+  display: inline-block;
+  position: relative;
+  color: rgba(50, 50, 50, 0.5);
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.home .spacer .date .number.c1 {
+  color: rgba(34, 139, 34, 0.5) !important;
+}
+.home .spacer .date .number.c2 {
+  color: rgba(220, 220, 220, 0.5) !important;
+}
+.home .spacer .date .number.c3 {
+  color: rgba(252, 221, 201, 0.5) !important;
+}
+.home .spacer .date .number:before,
+.home .spacer .date .number:after {
+  position: absolute;
+  content: attr(data-number);
+  transform-origin: top left;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.home .spacer .date .number:before {
+  color: #fff;
+  z-index: 3;
+  transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);
+}
+.home .spacer .date .number:after {
+  color: rgba(0, 0, 0, 0.03);
+  z-index: 2;
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+}
+.home .spacer .date .number:hover:before {
+  color: #fafafa;
+  transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+}
+.home .spacer .date .number:hover:after {
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+}
 body,
 html {
   margin: 0px !important;
@@ -12,7 +172,12 @@ html {
 }
 .navbar {
   z-index: 100;
-  background: rgba(249, 229, 188, 0.5) !important;
+  background: #fcddc9 !important;
+  position: fixed;
+  width: 100%;
+  -webkit-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+  -moz-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+  box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
 }
 .navbar .navbar-brand {
   font-family: 'Reenie Beanie', cursive;
@@ -35,12 +200,26 @@ html {
     margin-left: initial;
   }
 }
+.navbar .navbar-brand .initialLogo {
+  padding-top: 40px;
+}
+.navbar .navbar-brand .initialLogo .initial-wrapper {
+  background: #ffffff;
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  display: inline-block;
+  font-family: 'Kristi', cursive;
+  border: 1px dashed #ddd;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+}
 .navbar .navbar-toggler {
   border: none;
 }
 .navbar .nav-item {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #000000;
+  font-family: 'Loved by the King', cursive;
 }
 .navbar .nav-item + .nav-item {
   margin-left: 20px;
@@ -67,5 +246,42 @@ html {
   }
 }
 .page-body {
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 59px;
+}
+h1 {
+  font-family: 'Loved by the King', cursive;
+}
+.border-style1 {
+  padding: 20px 7px;
+  border: 1px dashed #ddd;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
+}
+.border-style1.c1 {
+  border: 1px dashed #228b22;
+  box-shadow: 0 0 0 3px #fff, 0 0 0 5px #228b22, 0 0 0 10px #fff, 0 0 2px 10px rgba(34, 139, 34, 0.3);
+}
+/* carousel */
+.site-carousel .carousel {
+  width: 100%;
+  height: 100%;
+}
+.site-carousel .carousel .slider-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.site-carousel .carousel .slider-wrapper .slider {
+  width: 100%;
+  height: 100%;
+}
+.site-carousel .carousel .slider-wrapper .slider .slide {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: flex;
+  justify-content: center;
+}
+.site-carousel .carousel .slider-wrapper .slider .slide .carousel-page {
+  display: block;
+  text-align: center;
 }

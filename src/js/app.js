@@ -33,8 +33,10 @@ class App extends Component{
                     <nav className="navbar navbar-expand-lg bg-dark">
                         <Link className="navbar-brand navbar-brand-centered" to="/">
                             <div className="initialLogo">
-                                <span className="initial1">J</span>
-                                <span className="initial2">R</span>
+                                <div className="initial-wrapper">
+                                    <span className="initial1">J</span>
+                                    <span className="initial2">R</span>
+                                </div>
                             </div>
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">

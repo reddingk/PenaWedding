@@ -1,0 +1,112 @@
+.home {
+    .landing {
+        width: 100%;
+        height: calc(100vh - @navHeight);
+        position: relative;
+        .back-img { 
+            overflow: hidden;
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            
+            .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(200,200,200,0.4);}
+            img{ min-width: 100%; height: 100%;}
+        }
+
+        .main-carousel {
+            width: 100%;
+            height: 100%;
+            .carousel-img-container {
+                display: inline-block;
+                width: 55%;
+                background: rgba(255,255,255,1);
+                padding: 10px;
+                .carousel-img { width: 100%;}
+            }
+        }
+    }
+
+    .section {
+        background: rgba(255,255,255,1);
+        padding: 40px 5% 70px;
+        &.welcome { 
+            text-align: center;
+            p { font-size: 1.3rem; }
+        }
+    }
+
+    .spacer {
+        width: 100%;
+        height: calc(70vh);
+        position: relative;
+        &.right { text-align: right; }
+        .back-img { 
+            overflow: hidden;
+            position: absolute;
+            z-index: 0;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;            
+            .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(200,200,200,0.4);}
+            img{ min-width: 100%; height: 100%;}
+        }
+        .date {
+            display: block;
+            font-weight: 900;
+            font-size: 500px;
+            line-height: 250px;
+            padding: 0px 5%;
+            display: block;            
+            color: rgba(255,255,255,1);
+            position: relative;            
+            .number {
+                display: inline-block;                                                
+                position: relative;
+                color: rgba(50,50,50,0.5);
+                transform-style: preserve-3d;
+                perspective: 400;
+                z-index: 1;
+                transition: all 0.3s ease-in-out;                
+
+                &.c1 { .color1(color, 0.5); }
+                &.c2 { .color2(color, 0.5); }
+                &.c3 { .color3(color, 0.5); }
+
+                &:before, &:after {
+                    position:absolute;
+                    content: attr(data-number);
+                    transform-origin: top left;
+                    top:0;
+                    left:0;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                &:before { 
+                    color: #fff;
+                    //text-shadow: -1px 0px 1px rgba(255,255,255,.8), 1px 0px 1px rgba(0,0,0,.8);
+                    z-index: 3;
+                    transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);                        
+                }
+
+                &:after{ 
+                    color: rgba(0,0,0,.03);
+                    z-index:2;
+                    transform: scale(1.08,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,1deg);                        
+                }
+
+                &:hover {
+                    &:before { 
+                        color: #fafafa;
+                        transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+                    }
+                    &:after { 
+                        transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
+                    }
+                }
+            }
+        }
+    }
+}
