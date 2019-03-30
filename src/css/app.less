@@ -11,9 +11,10 @@
 .color3(@prop,@val){ @{prop}: rgba(252,221,201,@val) !important; }
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Homemade+Apple|Kristi|Loved+by+the+King|Sacramento|Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Kristi|Loved+by+the+King|Cookie|Grand+Hotel|Lora|Rouge+Script|Sanchez');
 @font-size: 14px;
 
+@brace-color: rgba(0,0,0,1);
 @navHeight: 59px;
 
 @import "home.less";
@@ -25,10 +26,13 @@ body, html {
     font-size: @font-size;    
     
     //font-family: 'Kristi', cursive;
-    //font-family: 'Homemade Apple', cursive;
-    //font-family: 'Sacramento', cursive;
     //font-family: 'Loved by the King', cursive;
-   
+    
+    //font-family: 'Lora', serif;
+    //font-family: 'Cookie', cursive;
+    //font-family: 'Grand Hotel', cursive;
+    //font-family: 'Rouge Script', cursive;
+    font-family: 'Sanchez', serif;
 }
 *:focus { outline: none;}
 
@@ -79,7 +83,7 @@ body, html {
     .nav-item {
         font-size: 1.5rem;
         color: rgba(0,0,0,1);
-        font-family: 'Loved by the King', cursive;
+        font-family: 'Cookie', cursive;
         &+.nav-item { margin-left: 20px; @media @mobile-device { margin-left: initial; }}
     }
 
@@ -91,7 +95,7 @@ body, html {
     min-height: 100vh;
     padding-top: @navHeight;
 }
-h1 { font-family: 'Loved by the King', cursive; }
+h1 { font-family: 'Cookie', cursive; font-size: 3.5rem;}
 
 .border-style1 {
     padding: 20px 7px;
@@ -100,6 +104,60 @@ h1 { font-family: 'Loved by the King', cursive; }
 
     &.c1 { border: 1px dashed @color1; box-shadow: 0 0 0 3px #fff, 0 0 0 5px @color1, 0 0 0 10px #fff, 0 0 2px 10px rgba(34,139,34,0.3);}
 }
+
+
+.brace {
+    width: auto;
+    min-width: 35px;
+    padding-bottom: 20px;
+    font-size: 2em;
+    line-height: 2em;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 15px 15px;
+    border: none;
+    background-color: transparent;
+    background-image: radial-gradient(circle at 0 0, rgba(255,255,255,0) 14.5px, @color1 15.5px, @color1 19.5px, rgba(255,255,255,0) 20.5px), radial-gradient(circle at 35px 0, rgba(255,255,255,0) 14.5px, @color1 15.5px, @color1 19.5px, rgba(255,255,255,0) 20.5px);
+    background-size: 35px 20px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    text-transform: lowercase;
+    font-style: italic;
+    color: @color1;
+    -webkit-filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15));
+    filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15));
+    overflow: visible;
+  
+    &:before {
+        width: 50%;
+        border-top: 5px solid @color1;
+        border-left: 1px solid transparent;
+        border-top-left-radius: 20% 30px;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: -15px;
+        box-sizing: border-box;
+        margin-top: -5px;
+    }
+    
+    &:after {
+        width: 50%;
+        border-top: 5px solid @color1;
+        border-right: 1px solid transparent;
+        border-top-right-radius: 20% 30px;
+        height: 100%;
+        content: "";
+        position: absolute;
+        top: 100%;
+        right: -15px;
+        box-sizing: border-box;
+        margin-top: -5px;
+    }
+}
+
 /* carousel */
 .site-carousel {
     .carousel {

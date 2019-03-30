@@ -46,8 +46,9 @@ class Home extends Component{
                 </div>
 
                 <div className="section welcome">
-                    <div className="border-style1 c1">
+                    <div className="">
                         <h1>Welcome</h1>
+                        <hr className="brace"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                 </div>
@@ -58,8 +59,54 @@ class Home extends Component{
                         <img className="background-img" src={demo2}></img>
                     </div>
                     <div className="date">
-                        <span class="number c3" data-number="0">0</span>
-                        <span class="number c3" data-number="4">4</span>
+                        <span className="number c3" data-number="0">0</span>
+                        <span className="number c3" data-number="4">4</span>
+                    </div>
+                </div>
+
+                <div className="section howwemet">
+                    <div className="split-section">
+                        <div className="split-content">
+                            <div className="img-container">
+                                <img className="split-img" src={eg1}></img>
+                            </div>
+                        </div>
+                        <div className="split-content text">
+                            <h1>How We Met</h1>
+                            <hr className="brace"/>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="spacer left">
+                    <div className="back-img">
+                        <div className="cover"/>
+                        <img className="background-img" src={demo2}></img>
+                    </div>
+                    <div className="date">
+                        <span className="number c3" data-number="1">1</span>
+                        <span className="number c3" data-number="5">5</span>
+                    </div>
+                </div>
+
+                <div className="section registry">
+                    <div className="">
+                        <h1>Our Registry</h1>
+                        <hr className="brace"/>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <a href="" className="registry btn">View Our Registry</a>
+                    </div>
+                </div>
+
+                <div className="spacer right">
+                    <div className="back-img">
+                        <div className="cover"/>
+                        <img className="background-img" src={demo2}></img>
+                    </div>
+                    <div className="date">
+                        <span className="number c3" data-number="2">2</span>
+                        <span className="number c3" data-number="0">0</span>
                     </div>
                 </div>
             </div>
