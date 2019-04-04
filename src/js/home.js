@@ -8,6 +8,7 @@ import demo2 from '../assets/imgs/demo2.jpeg';
 import demo3 from '../assets/imgs/demo3.jpeg';
 import demo4 from '../assets/imgs/demo4.jpeg';
 
+import tp1 from '../assets/imgs/tp1.jpg';
 import eg1 from '../assets/imgs/eg1.jpg';
 import eg2 from '../assets/imgs/eg2.jpg';
 import eg3 from '../assets/imgs/eg3.jpg';
@@ -22,7 +23,7 @@ class Home extends Component{
         this.state = {
             scrollDuration: 7000,            
             showThumbs: false,
-            carouselData: [eg6,eg2,eg3,eg4]
+            carouselData: [tp1,eg6,eg2,eg3,eg4]
         }
     }
 

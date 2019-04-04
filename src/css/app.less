@@ -18,6 +18,7 @@
 @navHeight: 59px;
 
 @import "home.less";
+@import "weddingInfo.less";
 
 body, html { 
     margin: 0px !important;
@@ -84,6 +85,8 @@ body, html {
         font-size: 1.5rem;
         color: rgba(0,0,0,1);
         font-family: 'Cookie', cursive;
+        transition: 0.5s all ease-in-out;
+        &:hover { color: @color1;}
         &+.nav-item { margin-left: 20px; @media @mobile-device { margin-left: initial; }}
     }
 
@@ -91,6 +94,17 @@ body, html {
     .nav-left { margin-left: 25%; @media @mobile-device { margin-left: initial; }}
 }
 
+.footer {
+    padding: 7px;
+    background: @color3;
+    color: rgba(0,0,0,1);
+    text-align: center;
+    font-size: 1.2rem;
+    span {
+        padding: 0px 5px;
+        &.special { border-right: 1px solid rgba(0,0,0,1); font-family: 'Grand Hotel', cursive;}
+    }
+}
 .page-body {
     min-height: 100vh;
     padding-top: @navHeight;
@@ -157,6 +171,24 @@ h1 { font-family: 'Cookie', cursive; font-size: 3.5rem;}
         margin-top: -5px;
     }
 }
+.innerpage-content {
+    width: 100%;
+    min-height: calc(100vh - @navHeight);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .back-img { 
+        overflow: hidden;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+            
+        .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(200,200,200,0.4);}
+        img{ min-width: 100%; height: 100%;}
+    }
+}
 
 /* carousel */
 .site-carousel {
@@ -177,6 +209,61 @@ h1 { font-family: 'Cookie', cursive; font-size: 3.5rem;}
                     justify-content: center;
                     .carousel-page { display: block; text-align: center; }
                 }
+            }
+        }
+    }
+}
+
+.word {
+    font-weight: 900;
+    font-size: 40px;
+    display: inline;            
+    color: rgba(255,255,255,1);
+    //overflow:hidden; 
+    font-family: 'Sanchez', serif;
+    
+    &+.word { margin-left: 10px; }
+    .number {
+        display: inline-block;                                                
+        position: relative;
+        color: rgba(50,50,50,0.9);
+        transform-style: preserve-3d;
+        perspective: 400;
+        z-index: 1;
+        transition: all 0.3s ease-in-out;                
+
+        &.c1 { .color1(color, 0.9); }
+        &.c2 { .color2(color, 0.9); }
+        &.c3 { .color3(color, 0.9); }
+
+        &:before, &:after {
+            position:absolute;
+            content: attr(data-number);
+            transform-origin: top left;
+            top:0;
+            left:0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:before { 
+            color: #fff;
+            z-index: 3;
+            transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);                        
+        }
+
+        &:after{ 
+            color: rgba(0,0,0,.03);
+            z-index:2;
+            transform: scale(1.08,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,1deg);                        
+        }
+
+        &:hover {
+            &:before { 
+                color: #fafafa;
+                transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+            }
+            &:after { 
+                transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
             }
         }
     }

@@ -164,11 +164,15 @@
 .home .spacer .date {
   font-weight: 900;
   font-size: 500px;
-  line-height: 320px;
+  line-height: 500px;
   padding: 0px 5%;
   display: block;
   color: #ffffff;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  top: -75px;
+  left: 0;
+  overflow: hidden;
 }
 .home .spacer .date .number {
   display: inline-block;
@@ -213,6 +217,83 @@
 }
 .home .spacer .date .number:hover:after {
   transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+}
+/* Hover Wedding Party */
+/* https://tympanus.net/codrops/2016/11/23/tilt-hover-effects/ */
+/* Hex hover */
+/* https://codepen.io/littlesnippets/pen/QEYWXb */
+.ourWedding .innerpage-content {
+  padding: 4% 7%;
+}
+.ourWedding .innerpage-content .content-header {
+  position: relative;
+  padding: 0px 30px;
+  background: #969696;
+}
+.ourWedding .innerpage-content .content-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex: 1;
+  -webkit-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+  -moz-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+  box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+}
+.ourWedding .innerpage-content .content-section:after {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background: #323232;
+}
+.ourWedding .innerpage-content .content-section .content-img {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+.ourWedding .innerpage-content .content-section .text-content {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  width: 45%;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.ourWedding .innerpage-content .content-section .text-content .inner-container {
+  padding: 5px;
+  border: 2px solid #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.ourWedding .innerpage-content .content-section .text-content p {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+}
+.ourWedding .innerpage-content .content-section .text-content .fontStyle1 {
+  font-family: 'Rouge Script', cursive;
+}
+.ourWedding .innerpage-content .content-section .text-content h2 {
+  font-size: 3rem;
+  color: #228b22;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  background: rgba(34, 139, 34, 0.05) !important;
+  border-color: rgba(34, 139, 34, 0.2) !important;
 }
 body,
 html {
@@ -275,6 +356,10 @@ html {
   font-size: 1.5rem;
   color: #000000;
   font-family: 'Cookie', cursive;
+  transition: 0.5s all ease-in-out;
+}
+.navbar .nav-item:hover {
+  color: #228b22;
 }
 .navbar .nav-item + .nav-item {
   margin-left: 20px;
@@ -299,6 +384,20 @@ html {
   .navbar .nav-left {
     margin-left: initial;
   }
+}
+.footer {
+  padding: 7px;
+  background: #fcddc9;
+  color: #000000;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.footer span {
+  padding: 0px 5px;
+}
+.footer span.special {
+  border-right: 1px solid #000000;
+  font-family: 'Grand Hotel', cursive;
 }
 .page-body {
   min-height: 100vh;
@@ -366,6 +465,33 @@ h1 {
   box-sizing: border-box;
   margin-top: -5px;
 }
+.innerpage-content {
+  width: 100%;
+  min-height: calc(100vh - 59px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.innerpage-content .back-img {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.innerpage-content .back-img .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(200, 200, 200, 0.4);
+}
+.innerpage-content .back-img img {
+  min-width: 100%;
+  height: 100%;
+}
 /* carousel */
 .site-carousel .carousel {
   width: 100%;
@@ -389,4 +515,58 @@ h1 {
 .site-carousel .carousel .slider-wrapper .slider .slide .carousel-page {
   display: block;
   text-align: center;
+}
+.word {
+  font-weight: 900;
+  font-size: 40px;
+  display: inline;
+  color: #ffffff;
+  font-family: 'Sanchez', serif;
+}
+.word + .word {
+  margin-left: 10px;
+}
+.word .number {
+  display: inline-block;
+  position: relative;
+  color: rgba(50, 50, 50, 0.9);
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.word .number.c1 {
+  color: rgba(34, 139, 34, 0.9) !important;
+}
+.word .number.c2 {
+  color: rgba(220, 220, 220, 0.9) !important;
+}
+.word .number.c3 {
+  color: rgba(252, 221, 201, 0.9) !important;
+}
+.word .number:before,
+.word .number:after {
+  position: absolute;
+  content: attr(data-number);
+  transform-origin: top left;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+.word .number:before {
+  color: #fff;
+  z-index: 3;
+  transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+}
+.word .number:after {
+  color: rgba(0, 0, 0, 0.03);
+  z-index: 2;
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 1deg);
+}
+.word .number:hover:before {
+  color: #fafafa;
+  transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+}
+.word .number:hover:after {
+  transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
 }

@@ -1,3 +1,4 @@
+
 .home {
     .landing {
         width: 100%;
@@ -91,11 +92,15 @@
             display: block;
             font-weight: 900;
             font-size: 500px;
-            line-height: 320px;
+            line-height: 500px;
             padding: 0px 5%;
             display: block;            
             color: rgba(255,255,255,1);
-            position: relative;            
+            position: absolute;
+            width: 100%;
+            top:-75px;
+            left:0;
+            overflow:hidden;            
             .number {
                 display: inline-block;                                                
                 position: relative;
@@ -120,7 +125,6 @@
 
                 &:before { 
                     color: #fff;
-                    //text-shadow: -1px 0px 1px rgba(255,255,255,.8), 1px 0px 1px rgba(0,0,0,.8);
                     z-index: 3;
                     transform: rotateX(0deg) rotateY(-10deg) rotateZ(0deg);                        
                 }
@@ -144,3 +148,4 @@
         }
     }
 }
+

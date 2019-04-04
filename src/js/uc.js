@@ -9,7 +9,7 @@ class UC extends Component{
 
     render(){  
         return(
-            <div>
+            <div className="page-body uc">
                 <h1>Under Construction</h1>
             </div>
         );

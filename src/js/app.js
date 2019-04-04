@@ -4,15 +4,16 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 /* Components */
 import UC from './uc';
 import Home from './home';
+import OurWedding from './ourWedding';
 
 /* Styles */
 import "../css/app.less";
 
 const routes = [
     { path:"/aboutUs", component:UC},
-    { path:"/events", component:UC },
+    { path:"/ourWedding", component:OurWedding },
     { path:"/weddingParty", component:UC },
-    { path:"/registry", component:UC }    
+    { path:"/rspv", component:UC }    
 ];
 
 const SiteRoutes = route => (
@@ -44,13 +45,13 @@ class App extends Component{
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav nav-left">
+                                <Link className="nav-item nav-link" to="/ourWedding">Our Wedding</Link>
                                 <Link className="nav-item nav-link" to="/aboutUs">About Us</Link>
-                                <Link className="nav-item nav-link" to="/events">Events</Link>
                             </div>
 
                             <div className="navbar-nav ml-auto nav-right">
                                 <Link className="nav-item nav-link" to="/weddingParty">Wedding Party</Link>
-                                <Link className="nav-item nav-link" to="/registry">Registry</Link>
+                                <Link className="nav-item nav-link" to="/rsvp">RSVP</Link>
                             </div>
                         </div>
                     </nav>
@@ -60,7 +61,10 @@ class App extends Component{
                     { routes.map((route, i) => <SiteRoutes key={i} {...route} />) }
 
                     {/* FOOTER */}
-                    <div className="footer">Footer</div>
+                    <div className="footer">
+                        <span className="special">#PenaWedding</span>
+                        <span>04.15.2020</span>
+                    </div>
                 </div>
             </Router>
         );
