@@ -46,6 +46,16 @@ class Home extends Component{
                             </div>
                         )}
                     </Carousel>
+
+                    <div className="title-text">
+                        <div className="line lrg">
+                            <span className="name1">Jason</span>
+                            <span>&</span>
+                            <span className="name2">Rocio</span>
+                        </div>
+                        <div className="line md"><span>ARE GETTING MARRIED</span></div>
+                        <div className="line md"><span>04.15.2020</span></div>
+                    </div>
                 </div>
 
                 <div className="section welcome">

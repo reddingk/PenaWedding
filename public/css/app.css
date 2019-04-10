@@ -46,6 +46,58 @@
   width: 100%;
   height: calc(100vh - 59px);
   position: relative;
+  overflow: hidden;
+}
+.home .landing .title-text {
+  font-family: 'BioRhyme', serif;
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-30%, -80%);
+  z-index: 10;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+@media (max-width: 770px) {
+  .home .landing .title-text {
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    background: none;
+    width: 90%;
+    padding: 0;
+  }
+}
+.home .landing .title-text .lrg {
+  font-size: 100px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 75px;
+}
+@media (max-width: 770px) {
+  .home .landing .title-text .lrg {
+    font-size: 50px;
+    line-height: 40px;
+  }
+}
+.home .landing .title-text .md {
+  color: #936774;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: right;
+  text-shadow: 2px 2px 4px rgba(147, 147, 147, 0.8);
+}
+@media (max-width: 770px) {
+  .home .landing .title-text .md {
+    font-size: 25px;
+    line-height: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #c4b1b6;
+  }
+}
+.home .landing .title-text span + span {
+  margin-left: 15px;
 }
 .home .landing .back-img {
   overflow: hidden;
@@ -234,10 +286,10 @@
   color: rgba(165, 118, 102, 0.5) !important;
 }
 .home .spacer .date .number.c2 {
-  color: rgba(182, 182, 182, 0.5) !important;
+  color: rgba(147, 147, 147, 0.5) !important;
 }
 .home .spacer .date .number.c3 {
-  color: rgba(172, 135, 127, 0.5) !important;
+  color: rgba(196, 177, 182, 0.5) !important;
 }
 .home .spacer .date .number:before,
 .home .spacer .date .number:after {
@@ -545,7 +597,7 @@ h1 {
   margin-top: 10px;
   padding: 5px 10px;
   color: #000;
-  background: rgba(172, 135, 127, 0.1) !important;
+  background: rgba(196, 177, 182, 0.1) !important;
   border: 1px dashed #ddd;
   box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
   opacity: 0.6;
@@ -713,10 +765,10 @@ h1 {
   color: rgba(165, 118, 102, 0.9) !important;
 }
 .word .number.c2 {
-  color: rgba(182, 182, 182, 0.9) !important;
+  color: rgba(147, 147, 147, 0.9) !important;
 }
 .word .number.c3 {
-  color: rgba(172, 135, 127, 0.9) !important;
+  color: rgba(196, 177, 182, 0.9) !important;
 }
 .word .number:before,
 .word .number:after {
