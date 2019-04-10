@@ -24,6 +24,7 @@ class App extends Component{
     constructor(props) {
         super(props);
         this.state = {};
+        this.animateToggle = this.animateToggle.bind(this);
     }
 
     render(){     
@@ -41,7 +42,11 @@ class App extends Component{
                             </div>
                         </Link>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="navbar-toggler-icon"></span>
+                            <div id="menuIcon" className="animateMenu" onClick={this.animateToggle}>
+                                <div className="bar1"></div>
+                                <div className="bar2"></div>
+                                <div className="bar3"></div>
+                            </div>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav nav-left">
@@ -71,6 +76,11 @@ class App extends Component{
     }
 
     componentDidMount(){}
+    
+    animateToggle(e) {
+        var element = document.getElementById("menuIcon");
+        element.classList.toggle("change");
+    }
 }
 
 export default App;

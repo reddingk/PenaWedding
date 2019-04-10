@@ -12,7 +12,7 @@
             width: 100%;
             height: 100%;
             
-            .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(200,200,200,0.4);}
+            .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4);}
             img{ min-width: 100%; height: 100%;}
         }
 
@@ -24,6 +24,7 @@
                 width: 55%;
                 background: rgba(255,255,255,1);
                 padding: 10px;
+                @media @mobile-device { width: 85%; padding-bottom: 50px; }
                 .carousel-img { width: 100%;}
             }
         }
@@ -31,31 +32,38 @@
 
     .section {
         background: rgba(255,255,255,1);
-        padding: 40px 5% 70px;
+        padding: 100px 5% 70px;
         text-align: center;
         position: relative;
-        &.welcome {             
-            h1 { font-weight: bold; color: @color1; }
+        overflow: hidden;
+        @media @mobile-device { padding: 50px 10%;}
+
+        &.welcome {     
             .brace { margin-bottom: 30px;}
         }
-        p { font-size: 1.3rem; line-height: 2.2rem; }
 
-        .btn {
-            position: relative;
-            z-index: 5;
-            margin-top: 10px;
-            color: #000;
-            .color3(background, 0.1);
-            border: 1px dashed #ddd;
-            box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
-            opacity: 0.6;
-            transition: 0.5s all ease;
-            cursor: pointer;
-            &:hover { opacity: 1;}
+        .section-content { position: relative; z-index: 2;}
+        .highlight-img {
+            width: 70%;
+            position: absolute;            
+            top:0;
+            z-index: 0;
+            opacity: 0.2;
+            &.left { left:0; transform: translateX(-50%);}
+            &.right { right:0; transform: translateX(50%);}
+            img { width: 100%;}
+
+            @media @mobile-device { 
+                width: initial;
+                height: 50%;
+                img { width: initial; height: 100%;}
+            }
         }
+        p { font-size: 1.3rem; line-height: 2.2rem;  @media @mobile-device { font-size: 1.1rem; }}
 
         .split-section {
             display: flex;
+            @media @mobile-device { flex-direction: column;}
             .split-content { 
                 padding: 5px;
                 flex:1;
@@ -76,6 +84,7 @@
         width: 100%;
         height: 500px;
         position: relative;
+        @media @mobile-device { height: 300px;}
         &.right { text-align: right; }
         .back-img { 
             overflow: hidden;
@@ -85,7 +94,7 @@
             left:0;
             width: 100%;
             height: 100%;            
-            .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(200,200,200,0.4);}
+            .cover { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4);}
             img{ min-width: 100%; height: 100%;}
         }
         .date {
@@ -100,7 +109,9 @@
             width: 100%;
             top:-75px;
             left:0;
-            overflow:hidden;            
+            overflow:hidden;  
+            
+            @media @mobile-device { font-size: 250px; line-height: 190px; top: -10px}
             .number {
                 display: inline-block;                                                
                 position: relative;

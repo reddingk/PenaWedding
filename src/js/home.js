@@ -3,6 +3,8 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 /* Images */
+import bouquet from '../assets/imgs/Bouquet.png';
+
 import demo1 from '../assets/imgs/demo1.jpeg';
 import demo2 from '../assets/imgs/demo2.jpeg';
 import demo3 from '../assets/imgs/demo3.jpeg';
@@ -33,7 +35,7 @@ class Home extends Component{
                 <div className="landing">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo2}></img>
+                        <img className="background-img" src={demo3}></img>
                     </div>
                     <Carousel className="site-carousel main-carousel" showThumbs={this.state.showThumbs} showStatus={false} showIndicators={false} interval={this.state.scrollDuration} infiniteLoop autoPlay>
                         {this.state.carouselData.map((item, i) => 
@@ -47,7 +49,9 @@ class Home extends Component{
                 </div>
 
                 <div className="section welcome">
-                    <div className="">
+                    <div className="highlight-img left"><img src={bouquet}></img></div>
+
+                    <div className="section-content">
                         <h1>Welcome</h1>
                         <hr className="brace"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -57,16 +61,18 @@ class Home extends Component{
                 <div className="spacer right">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo2}></img>
+                        <img className="background-img" src={demo3}></img>
                     </div>
                     <div className="date">
-                        <span className="number c3" data-number="0">0</span>
-                        <span className="number c3" data-number="4">4</span>
+                        <span className="number c2" data-number="0">0</span>
+                        <span className="number c2" data-number="4">4</span>
                     </div>
                 </div>
 
                 <div className="section howwemet">
-                    <div className="split-section">
+                    <div className="highlight-img right"><img src={bouquet}></img></div>
+
+                    <div className="split-section section-content">
                         <div className="split-content">
                             <div className="img-container">
                                 <img className="split-img" src={eg1}></img>
@@ -83,16 +89,17 @@ class Home extends Component{
                 <div className="spacer left">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo2}></img>
+                        <img className="background-img" src={demo3}></img>
                     </div>
                     <div className="date">
-                        <span className="number c3" data-number="1">1</span>
-                        <span className="number c3" data-number="5">5</span>
+                        <span className="number c2" data-number="1">1</span>
+                        <span className="number c2" data-number="5">5</span>
                     </div>
                 </div>
 
                 <div className="section registry">
-                    <div className="">
+                    <div className="highlight-img left"><img src={bouquet}></img></div>
+                    <div className="section-content">
                         <h1>Our Registry</h1>
                         <hr className="brace"/>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -103,11 +110,11 @@ class Home extends Component{
                 <div className="spacer right">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo2}></img>
+                        <img className="background-img" src={demo3}></img>
                     </div>
                     <div className="date">
-                        <span className="number c3" data-number="2">2</span>
-                        <span className="number c3" data-number="0">0</span>
+                        <span className="number c2" data-number="2">2</span>
+                        <span className="number c2" data-number="0">0</span>
                     </div>
                 </div>
             </div>
