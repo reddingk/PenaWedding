@@ -11,7 +11,12 @@
         .content-header {
             position: relative;
             padding:0px 30px;
-            background: @color1;
+            background: rgba(190,190,190,0.3);
+            text-align: center;
+            font-weight: 900;
+            font-size: 40px;           
+            color: rgba(255,255,255,1);
+            font-family: 'BioRhyme', serif;
         }
         .content-section {
             position: relative;
@@ -23,9 +28,9 @@
             justify-content: space-between;
             flex-direction: row;
             flex:1;
-            -webkit-box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
-	        -moz-box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
-            box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
+            -webkit-box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
+	        -moz-box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
+            box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
 
             @media @mobile-device { flex-direction: column; }
             &:after {
@@ -36,8 +41,8 @@
                 left:0;
                 width:100%;
                 height:100%;
-                opacity: 0.5;
-                background: rgba(50,50,50,1);
+                opacity: 0.3;
+                background: rgba(190,190,190,1);
 
                 @media @mobile-device { opacity: 0.9;}
             } 

@@ -68,7 +68,7 @@ class App extends Component{
                     {/* FOOTER */}
                     <div className="footer">
                         <span className="special">#PenaWedding</span>
-                        <span>04.15.2020</span>
+                        <span>04.27.2020</span>
                     </div>
                 </div>
             </Router>

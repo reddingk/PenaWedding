@@ -52,9 +52,9 @@ body, html {
     background: @color5 !important;
     position: fixed;
     width: 100%;
-    -webkit-box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
-	   -moz-box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
-            box-shadow: 0 10px 6px -6px rgba(119,119,119,0.5);
+    -webkit-box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
+	   -moz-box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
+            box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
     
     .navbar-toggler {
         border: none;
@@ -219,6 +219,12 @@ h1 { font-family: 'BioRhyme', serif; font-size: 3.5rem; color: @color5;}
         right: -15px;
         box-sizing: border-box;
         margin-top: -5px;
+    }
+
+    &.cwhite{
+        background-image: radial-gradient(circle at 0 0, rgba(255,255,255,0) 14.5px, rgba(255,255,255,1) 15.5px, rgba(255,255,255,1) 19.5px, rgba(255,255,255,0) 20.5px), radial-gradient(circle at 35px 0, rgba(255,255,255,0) 14.5px, rgba(255,255,255,1) 15.5px, rgba(255,255,255,1) 19.5px, rgba(255,255,255,0) 20.5px);
+        &:before { border-top: 5px solid rgba(255,255,255,1); }
+        &:after { border-top: 5px solid rgba(255,255,255,1); }
     }
 }
 .innerpage-content {

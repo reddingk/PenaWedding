@@ -5,10 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 /* Images */
 import bouquet from '../assets/imgs/Bouquet.png';
 
-import demo1 from '../assets/imgs/demo1.jpeg';
-import demo2 from '../assets/imgs/demo2.jpeg';
-import demo3 from '../assets/imgs/demo3.jpeg';
-import demo4 from '../assets/imgs/demo4.jpeg';
+import background from '../assets/imgs/wood1.jpeg';
 
 import tp1 from '../assets/imgs/tp1.jpg';
 import eg1 from '../assets/imgs/eg1.jpg';
@@ -35,7 +32,7 @@ class Home extends Component{
                 <div className="landing">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo3}></img>
+                        <img className="background-img" src={background}></img>
                     </div>
                     <Carousel className="site-carousel main-carousel" showThumbs={this.state.showThumbs} showStatus={false} showIndicators={false} interval={this.state.scrollDuration} infiniteLoop autoPlay>
                         {this.state.carouselData.map((item, i) => 
@@ -54,7 +51,7 @@ class Home extends Component{
                             <span className="name2">Rocio</span>
                         </div>
                         <div className="line md"><span>ARE GETTING MARRIED</span></div>
-                        <div className="line md"><span>04.15.2020</span></div>
+                        <div className="line md"><span>04.27.2020</span></div>
                     </div>
                 </div>
 
@@ -71,7 +68,7 @@ class Home extends Component{
                 <div className="spacer right">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo3}></img>
+                        <img className="background-img" src={background}></img>
                     </div>
                     <div className="date">
                         <span className="number c2" data-number="0">0</span>
@@ -99,11 +96,11 @@ class Home extends Component{
                 <div className="spacer left">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo3}></img>
+                        <img className="background-img" src={background}></img>
                     </div>
                     <div className="date">
-                        <span className="number c2" data-number="1">1</span>
-                        <span className="number c2" data-number="5">5</span>
+                        <span className="number c2" data-number="2">2</span>
+                        <span className="number c2" data-number="7">7</span>
                     </div>
                 </div>
 
@@ -120,7 +117,7 @@ class Home extends Component{
                 <div className="spacer right">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo3}></img>
+                        <img className="background-img" src={background}></img>
                     </div>
                     <div className="date">
                         <span className="number c2" data-number="2">2</span>

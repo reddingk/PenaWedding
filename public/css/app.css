@@ -327,7 +327,12 @@
 .ourWedding .innerpage-content .content-header {
   position: relative;
   padding: 0px 30px;
-  background: #a57666;
+  background: rgba(190, 190, 190, 0.3);
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+  font-family: 'BioRhyme', serif;
 }
 .ourWedding .innerpage-content .content-section {
   position: relative;
@@ -339,9 +344,9 @@
   justify-content: space-between;
   flex-direction: row;
   flex: 1;
-  -webkit-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
-  -moz-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
-  box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+  -webkit-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
 }
 @media (max-width: 770px) {
   .ourWedding .innerpage-content .content-section {
@@ -356,8 +361,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
-  background: #323232;
+  opacity: 0.3;
+  background: #bebebe;
 }
 @media (max-width: 770px) {
   .ourWedding .innerpage-content .content-section:after {
@@ -465,9 +470,9 @@ html {
   background: #936774 !important;
   position: fixed;
   width: 100%;
-  -webkit-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
-  -moz-box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
-  box-shadow: 0 10px 6px -6px rgba(119, 119, 119, 0.5);
+  -webkit-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
 }
 .navbar .navbar-toggler {
   border: none;
@@ -664,6 +669,15 @@ h1 {
   right: -15px;
   box-sizing: border-box;
   margin-top: -5px;
+}
+.brace.cwhite {
+  background-image: radial-gradient(circle at 0 0, rgba(255, 255, 255, 0) 14.5px, #ffffff 15.5px, #ffffff 19.5px, rgba(255, 255, 255, 0) 20.5px), radial-gradient(circle at 35px 0, rgba(255, 255, 255, 0) 14.5px, #ffffff 15.5px, #ffffff 19.5px, rgba(255, 255, 255, 0) 20.5px);
+}
+.brace.cwhite:before {
+  border-top: 5px solid #ffffff;
+}
+.brace.cwhite:after {
+  border-top: 5px solid #ffffff;
 }
 .innerpage-content {
   width: 100%;

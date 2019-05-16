@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import demo2 from '../assets/imgs/demo3.jpeg';
+import background from '../assets/imgs/wood1.jpeg';
+
 import vineyard1 from '../assets/imgs/vineyard1.jpg';
 import vineyard2 from '../assets/imgs/vineyard2.jpg';
 import vineyard3 from '../assets/imgs/vineyard3.jpg';
@@ -25,24 +26,16 @@ class OurWedding extends Component{
                 <div className="innerpage-content">
                     <div className="back-img">
                         <div className="cover"/>
-                        <img className="background-img" src={demo2}></img>
+                        <img className="background-img" src={background}></img>
                     </div>
                     
                     <div className="content-header">
-                        <div className="word">                   
-                            <span className="number c2" data-number="Our">Our</span>
-                        </div> 
-                        <div className="word">                   
-                            <span className="number c2" data-number="Wedding">Wedding</span>
-                        </div> 
-                        <div className="word">                   
-                            <span className="number c2" data-number="Day">Day</span>
-                        </div>                  
+                        <span>Our Wedding Day</span>
+                        <hr className="brace cwhite"/>                                       
                     </div>
 
                     <div className="content-section">                        
-                        {/*<img className="content-img" src={vineyard1}></img>*/}
-                        <Carousel className="site-carousel back-carousel" showThumbs={false} showArrows={false} showStatus={false} showIndicators={false} interval={this.state.scrollDuration} infiniteLoop autoPlay>
+                        {/*<Carousel className="site-carousel back-carousel" showThumbs={false} showArrows={false} showStatus={false} showIndicators={false} interval={this.state.scrollDuration} infiniteLoop autoPlay>
                             {this.state.images.map((item, i) => 
                                 <div className="img-page" key={i}>
                                     <div className="carousel-img-container">
@@ -50,14 +43,14 @@ class OurWedding extends Component{
                                     </div>
                                 </div>
                             )}
-                        </Carousel>
+                            </Carousel>*/}
 
                         <div className="text-content">
                             <div className="inner-container">
                                 <p className="fontStyle1">Birch Wood Vineyards</p>
                                 <p>199 Rockingham Rd., Derry, NH. 03038</p>
                                 <h2>Ceremony</h2>
-                                <p>Friday, April 15, 2020</p>
+                                <p>Friday, April 27, 2020</p>
                                 <p>5:00 PM</p>  
                                 
                                 <div className="rsvp-message">To RSVP To Share Our Day With Us Please Mail The Return Note In Your Invitation Or Click Below.</div>
