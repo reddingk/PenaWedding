@@ -4,43 +4,43 @@
   font-family: 'Alegreya';
   font-style: normal;
   font-weight: 400;
-  src: local('Alegreya Regular'), local('Alegreya-Regular'), url(https://fonts.gstatic.com/s/alegreya/v12/4UaBrEBBsBhlBjvfkSLhx60.ttf) format('truetype');
+  src: local('Alegreya Regular'), local('Alegreya-Regular'), url(https://fonts.gstatic.com/s/alegreya/v13/4UaBrEBBsBhlBjvfkSLhx60.ttf) format('truetype');
 }
 @font-face {
   font-family: 'BioRhyme';
   font-style: normal;
   font-weight: 400;
-  src: local('BioRhyme'), local('BioRhyme-Regular'), url(https://fonts.gstatic.com/s/biorhyme/v3/1cXwaULHBpDMsHYW_ExBr1E.ttf) format('truetype');
+  src: local('BioRhyme'), local('BioRhyme-Regular'), url(https://fonts.gstatic.com/s/biorhyme/v4/1cXwaULHBpDMsHYW_ExBr1E.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant Garamond';
   font-style: italic;
   font-weight: 600;
-  src: local('Cormorant Garamond SemiBold Italic'), local('CormorantGaramond-SemiBoldItalic'), url(https://fonts.gstatic.com/s/cormorantgaramond/v6/co3WmX5slCNuHLi8bLeY9MK7whWMhyjYrEOXvT-KzhY.ttf) format('truetype');
+  src: local('Cormorant Garamond SemiBold Italic'), local('CormorantGaramond-SemiBoldItalic'), url(https://fonts.gstatic.com/s/cormorantgaramond/v7/co3WmX5slCNuHLi8bLeY9MK7whWMhyjYrEOXvT-KzhY.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Eczar';
   font-style: normal;
   font-weight: 400;
-  src: local('Eczar Regular'), local('Eczar-Regular'), url(https://fonts.gstatic.com/s/eczar/v7/BXRlvF3Pi-DLmz0lDOs.ttf) format('truetype');
+  src: local('Eczar Regular'), local('Eczar-Regular'), url(https://fonts.gstatic.com/s/eczar/v8/BXRlvF3Pi-DLmz0lDOs.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Inknut Antiqua';
   font-style: normal;
   font-weight: 400;
-  src: local('Inknut Antiqua Regular'), local('InknutAntiqua-Regular'), url(https://fonts.gstatic.com/s/inknutantiqua/v4/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4Jg.ttf) format('truetype');
+  src: local('Inknut Antiqua Regular'), local('InknutAntiqua-Regular'), url(https://fonts.gstatic.com/s/inknutantiqua/v5/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4Jg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Kristi';
   font-style: normal;
   font-weight: 400;
-  src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v10/uK_y4ricdeU6zwdhDRcX.ttf) format('truetype');
+  src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v11/uK_y4ricdeU6zwdhDRcX.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v6/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
+  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
 }
 .home .landing {
   width: 100%;
@@ -453,6 +453,194 @@
   .ourWedding .innerpage-content .content-section .text-content h2 {
     font-size: 2.5rem;
   }
+}
+.weddingParty {
+  display: flex;
+}
+.weddingParty .party-nav {
+  border: 1px solid rgba(50, 50, 50, 0.2);
+  padding: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: rgba(147, 103, 116, 0.1) !important;
+}
+.weddingParty .party-nav .party-title {
+  font-weight: bold;
+}
+.weddingParty .party-nav .party-nav-item {
+  height: 60px;
+  width: 60px;
+  padding: 7px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}
+.weddingParty .party-nav .party-nav-item.selected {
+  border: 1px solid #323232;
+}
+.weddingParty .party-nav .party-nav-item .img-container {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  -webkit-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  -moz-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
+  overflow: hidden;
+  transition: 0.5s all ease-in-out;
+}
+.weddingParty .party-nav .party-nav-item .img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.weddingParty .party-nav.groomsmen .party-title {
+  color: #939393;
+}
+.weddingParty .party-nav.groomsmen .selected {
+  border-color: #939393;
+  background: rgba(147, 147, 147, 0.4) !important;
+}
+.weddingParty .party-nav.groomsmen .party-nav-item:hover:not(.selected) .img-container {
+  border-color: #939393;
+}
+.weddingParty .party-nav.bridesmaid .party-title {
+  color: #936774;
+}
+.weddingParty .party-nav.bridesmaid .selected {
+  border-color: #936774;
+  background: rgba(147, 103, 116, 0.4) !important;
+}
+.weddingParty .party-nav.bridesmaid .party-nav-item:hover:not(.selected) .img-container {
+  border-color: #936774;
+}
+.weddingParty .party-main {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+.weddingParty .party-main .highlight-img {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.2;
+}
+.weddingParty .party-main .highlight-img.left {
+  left: 0;
+  transform: translateX(-50%);
+}
+.weddingParty .party-main .highlight-img.right {
+  right: 0;
+  transform: translateX(50%);
+}
+.weddingParty .party-main .highlight-img img {
+  width: 100%;
+}
+@media (max-width: 770px) {
+  .weddingParty .party-main .highlight-img {
+    width: initial;
+    height: 50%;
+  }
+  .weddingParty .party-main .highlight-img img {
+    width: initial;
+    height: 100%;
+  }
+}
+.weddingParty .party-main .party-main-container {
+  text-align: center;
+  padding: 5%;
+}
+.weddingParty .party-main .party-main-container .selected-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.weddingParty .party-main .party-main-container .selected-container .split-item.selected-img {
+  padding: 7px;
+  border: 1px solid rgba(50, 50, 50, 0.5);
+  overflow: hidden;
+  width: 45%;
+}
+.weddingParty .party-main .party-main-container .selected-container .split-item.selected-img img {
+  width: 100%;
+  object-fit: contain;
+}
+.weddingParty .party-main .party-main-container .selected-container .split-item.selected-content {
+  padding: 0px 10px;
+  flex: 1;
+}
+.weddingParty .party-main .party-main-container .selected-container .split-item.selected-content h2 {
+  font-weight: bold;
+}
+.weddingParty .party-main .party-main-container .selected-container .split-item.selected-content .sub-title {
+  font-size: 1rem;
+}
+.weddingParty .party-main .party-main-container .selected-container .split-item.selected-content .description {
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+.weddingParty .party-main .party-main-container .selected-container.groomsmen h2,
+.weddingParty .party-main .party-main-container .selected-container.groomsmen .sub-title {
+  color: #939393;
+}
+.weddingParty .party-main .party-main-container .selected-container.bridesmaid h2,
+.weddingParty .party-main .party-main-container .selected-container.bridesmaid .sub-title {
+  color: #936774;
+}
+.weddingParty .party-main .party-main-container .auto-timer {
+  margin-top: 30px;
+  padding: 3px;
+  border: 1px solid #936774;
+  display: inline-block;
+  border-radius: 50%;
+}
+.weddingParty .party-main .party-main-container .auto-timer .auto-timer-container {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border-color: rgba(147, 103, 116, 0.5) !important;
+}
+.weddingParty .party-main .party-main-container .auto-timer .auto-timer-container .time {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.weddingParty .party-main .party-main-container .auto-timer .auto-timer-container .time-ctrl {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.weddingParty .party-main .party-main-container .auto-timer .auto-timer-container .loader-back {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: rgba(147, 103, 116, 0.3) !important;
+}
+.weddingParty .party-main .party-main-container .auto-timer .auto-timer-container:hover .time-ctrl {
+  opacity: 0.9;
 }
 body,
 html {

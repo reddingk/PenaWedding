@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import UC from './uc';
 import Home from './home';
 import OurWedding from './ourWedding';
+import WeddingParty from './weddingParty';
 
 /* Styles */
 import "../css/app.less";
@@ -12,7 +13,7 @@ import "../css/app.less";
 const routes = [
     { path:"/aboutUs", component:UC},
     { path:"/ourWedding", component:OurWedding },
-    { path:"/weddingParty", component:UC },
+    { path:"/weddingParty", component:WeddingParty },
     { path:"/rspv", component:UC }    
 ];
 
