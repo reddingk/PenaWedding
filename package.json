@@ -4,6 +4,7 @@
   "description": "Pena Wedding Website",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "build-css": "less-watch-compiler --run-once --main-file=app.less src/css/ public/css/",
     "watch-css": "npm run build-css && less-watch-compiler --main-file=app.less src/css/ public/css/",
     "build": "npm run build-css && react-scripts build",
