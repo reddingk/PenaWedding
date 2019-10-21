@@ -21,7 +21,8 @@
 
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Kristi|Alegreya|BioRhyme|Cormorant+Garamond:600i|Eczar|Inknut+Antiqua|Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Kristi|Alegreya|BioRhyme|Cormorant+Garamond:600i|Eczar|Inknut+Antiqua|Great+Vibes|Monsieur+La+Doulaise|Pinyon+Script|Poppins:300');
+
 @font-size: 14px;
 
 @brace-color: rgba(0,0,0,1);
@@ -31,6 +32,7 @@
 @import "home.less";
 @import "weddingInfo.less";
 @import "weddingparty.less";
+@import "aboutus.less";
 
 body, html { 
     margin: 0px !important;
@@ -136,7 +138,13 @@ body, html {
 
     @media @mobile-device { padding-top: @mobileNavHeight;}
 }
-h1 { font-family: 'BioRhyme', serif; font-size: 3.5rem; color: @color5;}
+h1 { 
+    font-family: 'BioRhyme', serif; 
+    font-size: 3.5rem; 
+    color: @color5;
+    &.title-sub { margin-top: 75px; }
+    &.sub { display: block; font-size: 2rem; color: @color2; font-family: 'Great Vibes', cursive; }    
+}
 
 .border-style1 {
     padding: 20px 7px;
@@ -144,6 +152,12 @@ h1 { font-family: 'BioRhyme', serif; font-size: 3.5rem; color: @color5;}
     box-shadow: 0 0 0 3px #fff, 0 0 0 5px #ddd, 0 0 0 10px #fff, 0 0 2px 10px #eee;
 
     &.c1 { border: 1px dashed @color1; box-shadow: 0 0 0 3px #fff, 0 0 0 5px @color1, 0 0 0 10px #fff, 0 0 2px 10px rgba(34,139,34,0.3);}
+}
+
+.cursive {    
+    //font-family: 'Monsieur La Doulaise', cursive;
+    font-family: 'Great Vibes', cursive;   
+    //font-family: 'Pinyon Script', cursive; 
 }
 
 .btn {
@@ -344,6 +358,59 @@ h1 { font-family: 'BioRhyme', serif; font-size: 3.5rem; color: @color5;}
             &:after { 
                 transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
             }
+        }
+    }
+}
+
+/* RSVP */
+.rsvp-container {
+    height: 100%;   
+    position: relative;
+    &.lock {
+        &:before {
+            content: '';
+            height: 100%;
+            width: 100%;        
+            position: absolute;
+            top:0;
+            left:0;
+            .color2(background, 0.5);
+        } 
+    }
+
+    .rsvp-message { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75%;
+        color: rgba(255,255,255,1);
+        background: rgba(50,50,50,0.7);
+        text-align: center;
+    }
+
+    iframe {
+        padding: 50px 0px;
+        width: 100%;
+        height: 1650px;
+        min-height: 100vh;
+        //.color1(background, 0.2);
+    }
+
+    .highlight-img {
+        width: 70%;
+        position: absolute;            
+        top:0;
+        z-index: 0;
+        opacity: 0.2;
+        &.left { left:0; transform: translateX(-50%);}
+        &.right { right:0; transform: translateX(50%);}
+        img { width: 100%;}
+
+        @media @mobile-device { 
+            width: initial;
+            height: 50%;
+            img { width: initial; height: 100%;}
         }
     }
 }

@@ -6,15 +6,17 @@ import UC from './uc';
 import Home from './home';
 import OurWedding from './ourWedding';
 import WeddingParty from './weddingParty';
+import RSVP from './rsvp';
+import AboutUs from './aboutUs';
 
 /* Styles */
 import "../css/app.less";
 
 const routes = [
-    { path:"/aboutUs", component:UC},
+    { path:"/aboutUs", component:AboutUs},
     { path:"/ourWedding", component:OurWedding },
     { path:"/weddingParty", component:WeddingParty },
-    { path:"/rspv", component:UC }    
+    { path:"/rsvp", component:RSVP }    
 ];
 
 const SiteRoutes = route => (
@@ -68,7 +70,7 @@ class App extends Component{
 
                     {/* FOOTER */}
                     <div className="footer">
-                        <span className="special">#PenaWedding</span>
+                        <span className="special">#APenaWedding</span>
                         <span>04.27.2020</span>
                     </div>
                 </div>

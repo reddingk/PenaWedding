@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import background from '../assets/imgs/wood1.jpeg';
+import background from '../assets/imgs/wood1-min.jpeg';
 
 import vineyard1 from '../assets/imgs/vineyard1.jpg';
 import vineyard2 from '../assets/imgs/vineyard2.jpg';
@@ -43,15 +43,15 @@ class OurWedding extends Component{
                                     </div>
                                 </div>
                             )}
-                            </Carousel>*/}
+                        </Carousel>*/}
 
                         <div className="text-content">
                             <div className="inner-container">
                                 <p className="fontStyle1">Birch Wood Vineyards</p>
                                 <p>199 Rockingham Rd., Derry, NH. 03038</p>
                                 <h2>Ceremony</h2>
-                                <p>Friday, April 27, 2020</p>
-                                <p>5:00 PM</p>  
+                                <p>Monday, April 27, 2020</p>
+                                <p>4:00 PM</p>  
                                 
                                 <div className="rsvp-message">To RSVP To Share Our Day With Us Please Mail The Return Note In Your Invitation Or Click Below.</div>
                                 <div className="btn-container">
@@ -63,8 +63,13 @@ class OurWedding extends Component{
                             <div className="inner-container">
                                 <p className="fontStyle1">Birch Wood Vineyards</p>
                                 <p>199 Rockingham Rd., Derry, NH. 03038</p>
-                                <h2>Reception</h2>
-                                <p>To reception will follow on the same grounds as our ceremony.</p>
+                                <h2>Cocktails & Reception</h2>
+                                                               
+                                <div className="rsvp-message">The Cocktail Hour & Reception will follow the ceremony on the same grounds.</div>
+                                <p>Cocktail Hour</p>
+                                <p>5:00pm</p>
+
+                                <p>Reception</p>
                                 <p>6:00 PM</p>                                
                             </div>
                         </div>

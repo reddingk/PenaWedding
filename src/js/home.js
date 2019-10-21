@@ -3,17 +3,20 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 /* Images */
-import bouquet from '../assets/imgs/Bouquet.png';
+import bouquet from '../assets/imgs/Bouquet-min.png';
 
-import background from '../assets/imgs/wood1.jpeg';
+import background from '../assets/imgs/wood1-min.jpeg';
 
 import tp1 from '../assets/imgs/tp1.jpg';
-import eg1 from '../assets/imgs/eg1.jpg';
-import eg2 from '../assets/imgs/eg2.jpg';
-import eg3 from '../assets/imgs/eg3.jpg';
-import eg4 from '../assets/imgs/eg4.jpg';
-import eg5 from '../assets/imgs/eg5.jpg';
-import eg6 from '../assets/imgs/eg6.jpg';
+import eg1 from '../assets/imgs/engagement/eg1.JPG';
+import eg2 from '../assets/imgs/engagement/eg2.JPG';
+import eg3 from '../assets/imgs/engagement/eg3.JPG';
+import eg4 from '../assets/imgs/engagement/eg4.JPG';
+import eg5 from '../assets/imgs/engagement/eg5.JPG';
+import eg6 from '../assets/imgs/engagement/eg6.JPG';
+import eg7 from '../assets/imgs/engagement/eg7.JPG';
+import eg8 from '../assets/imgs/engagement/eg8.JPG';
+import eg9 from '../assets/imgs/engagement/eg9.JPG';
 
 class Home extends Component{
     constructor(props) {
@@ -22,7 +25,7 @@ class Home extends Component{
         this.state = {
             scrollDuration: 7000,            
             showThumbs: false,
-            carouselData: [tp1,eg6,eg2,eg3,eg4]
+            carouselData: [eg1,eg7,eg5]
         }
     }
 
@@ -45,7 +48,7 @@ class Home extends Component{
                     </Carousel>
 
                     <div className="title-text">
-                        <div className="line lrg">
+                        <div className="line lrg cursive">
                             <span className="name1">Jason</span>
                             <span>&</span>
                             <span className="name2">Rocio</span>
@@ -61,7 +64,7 @@ class Home extends Component{
                     <div className="section-content">
                         <h1>Welcome</h1>
                         <hr className="brace"/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p>Thank you for visiting our website to help celebrate our wedding, we are beyond happy for all of the love and support we have gotten.</p>
                     </div>
                 </div>
 
@@ -80,15 +83,19 @@ class Home extends Component{
                     <div className="highlight-img right"><img src={bouquet}></img></div>
 
                     <div className="split-section section-content">
-                        <div className="split-content">
+                        <div className="split-content img">
                             <div className="img-container">
-                                <img className="split-img" src={eg1}></img>
+                                <img className="split-img" src={eg8}></img>
                             </div>
                         </div>
                         <div className="split-content text">
                             <h1>How We Met</h1>
                             <hr className="brace"/>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <h1 className="sub">3rd Time's A Charm</h1>
+
+                            <p><span>Jason and Rocio first met</span> at Phillips Academy while they were both working at the summer program back in 2012. They were both TA’s, Rocio assisting with Math and Jason with College Counseling. They would cross paths without ever exchanging words until one day they had an unexpected encounter.</p> 
+                            <p>Rocio and her mother had gone into Best Buy to purchase a universal remote controller her father needed.  As her and mother needed assistance finding the universal remote Rocio had asked a gentleman that just finished helping a couple. <span>As the guy turned around</span> Rocio was caught off guard it was that same guy  she kept on crossing paths with  from Phillips Academy. Jason was quick to  assist  Rocio and  her mother finding the best universal remote  Best Buy carried.</p>
+                            <p>As they say 3rd times a charm and Rocio and Jason would meet again. 3rd time they saw each other again they were both out celebrating a mutual friend's birthday without knowing they would both be there. <span>Jason asked for Rocio's number</span>  and the rest is pretty obvious.</p>                            
                         </div>
                     </div>
                 </div>
@@ -107,10 +114,16 @@ class Home extends Component{
                 <div className="section registry">
                     <div className="highlight-img left"><img src={bouquet}></img></div>
                     <div className="section-content">
-                        <h1>Our Registry</h1>
+                        <h1>When We Started Dating</h1>
+                        <hr className="brace"/>                        
+                        <h1 className="sub">Sticking To One Date</h1>
+                        <p>Jason and Rocio made it official on April  27th 2013.  Almost 7 years later and they have chosen to get married on their anniversary date.</p>
+
+                        <h1 className="title-sub">How He Proposed</h1>
                         <hr className="brace"/>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        <a href="" className="registry btn">View Our Registry</a>
+                        <h1 className="sub">Kill 3 Birds With One Stone</h1>
+
+                        <p>Jason and Rocio planned their house warming and Rocio’s birthday into one Celebration. What Rocio didn't know was Jason  had something under his sleeves. He had planned to  propose while she blew out her candles. Everything went exactly as planned and they got to share 3 special moments with  friends and family. Now they can’t wait to celebrate their union alongside everyone.</p>
                     </div>
                 </div>
 

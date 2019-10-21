@@ -25,6 +25,12 @@
   src: local('Eczar Regular'), local('Eczar-Regular'), url(https://fonts.gstatic.com/s/eczar/v8/BXRlvF3Pi-DLmz0lDOs.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Great Vibes'), local('GreatVibes-Regular'), url(https://fonts.gstatic.com/s/greatvibes/v7/RWmMoKWR9v4ksMfaWd_JN9XFiaE.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Inknut Antiqua';
   font-style: normal;
   font-weight: 400;
@@ -37,10 +43,22 @@
   src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v11/uK_y4ricdeU6zwdhDRcX.ttf) format('truetype');
 }
 @font-face {
+  font-family: 'Monsieur La Doulaise';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v8/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZm5ZyEU.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pinyon Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pinyon Script'), local('PinyonScript'), url(https://fonts.gstatic.com/s/pinyonscript/v9/6xKpdSJbL9-e9LuoeQiDRQR8WOXaPw.ttf) format('truetype');
+}
+@font-face {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v8/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
+  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
 }
 .home .landing {
   width: 100%;
@@ -49,14 +67,12 @@
   overflow: hidden;
 }
 .home .landing .title-text {
-  font-family: 'BioRhyme', serif;
   position: absolute;
   top: 80%;
   left: 30%;
   transform: translate(-30%, -80%);
   z-index: 10;
   text-align: center;
-  background: rgba(255, 255, 255, 0.8);
   padding: 15px 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
@@ -71,9 +87,13 @@
   }
 }
 .home .landing .title-text .lrg {
-  font-size: 100px;
-  color: rgba(255, 255, 255, 0.8);
-  line-height: 75px;
+  font-size: 120px;
+  color: #ffffff;
+  line-height: 85px;
+  font-family: 'Great Vibes', cursive;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 5px;
 }
 @media (max-width: 770px) {
   .home .landing .title-text .lrg {
@@ -82,11 +102,12 @@
   }
 }
 .home .landing .title-text .md {
-  color: #936774;
+  font-family: 'BioRhyme', serif;
+  color: #ffffff;
   font-size: 30px;
   line-height: 30px;
   text-align: right;
-  text-shadow: 2px 2px 4px rgba(147, 147, 147, 0.8);
+  text-shadow: 2px 2px 4px rgba(47, 47, 47, 0.8);
 }
 @media (max-width: 770px) {
   .home .landing .title-text .md {
@@ -204,10 +225,24 @@
 }
 .home .section .split-section .split-content {
   padding: 5px;
-  flex: 1;
+}
+.home .section .split-section .split-content.img {
+  width: 40%;
 }
 .home .section .split-section .split-content.text {
   padding: 12px;
+  flex: 1;
+}
+.home .section .split-section .split-content p {
+  padding: 7px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.home .section .split-section .split-content p span {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: 'Great Vibes', cursive;
+  color: #936774;
 }
 .home .section .split-section .img-container {
   width: 100%;
@@ -572,13 +607,13 @@
   flex: 1;
 }
 .weddingParty .party-main .party-main-container .selected-container .split-item.selected-content h2 {
-  font-weight: bold;
+  font-size: 4.5rem;
 }
 .weddingParty .party-main .party-main-container .selected-container .split-item.selected-content .sub-title {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .weddingParty .party-main .party-main-container .selected-container .split-item.selected-content .description {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 3rem;
 }
 .weddingParty .party-main .party-main-container .selected-container.groomsmen h2,
@@ -641,6 +676,155 @@
 }
 .weddingParty .party-main .party-main-container .auto-timer .auto-timer-container:hover .time-ctrl {
   opacity: 0.9;
+}
+.aboutUs .innerpage-content {
+  padding: 4% 7%;
+}
+.aboutUs .innerpage-content .content-header {
+  padding: 0px 30px;
+  text-align: center;
+}
+.aboutUs .innerpage-content .card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.aboutUs .innerpage-content .card-container .card-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 75vh;
+  width: 100%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz1 {
+  height: 10%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz2 {
+  height: 20%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz3 {
+  height: 30%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz4 {
+  height: 40%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz5 {
+  height: 50%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz6 {
+  height: 60%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz7 {
+  height: 70%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz8 {
+  height: 80%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz9 {
+  height: 90%;
+}
+.aboutUs .innerpage-content .card-container .card-row .sz10 {
+  height: 100%;
+}
+@media (max-width: 770px) {
+  .aboutUs .innerpage-content .card-container .card-row {
+    flex-wrap: nowrap;
+    height: 100vh;
+  }
+}
+.aboutUs .innerpage-content .card-container .flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
+  padding: 10px;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-front,
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-front {
+  background-color: #bbb;
+  color: black;
+  overflow: hidden;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-front img {
+  width: 100%;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-front .about-question {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 7px;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 4rem;
+  width: 75%;
+  font-weight: bold;
+  background: rgba(50, 50, 50, 0.5);
+  font-family: 'BioRhyme', serif;
+}
+@media (max-width: 770px) {
+  .aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-front .about-question {
+    font-size: 1.4rem;
+  }
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back {
+  transform: rotateY(180deg);
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back.c1 {
+  background-color: #a57666;
+  color: white;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back.c2 {
+  background-color: #939393;
+  color: white;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back.c3 {
+  background-color: #c4b1b6;
+  color: white;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back.c4 {
+  background-color: #ac877f;
+  color: white;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back.c5 {
+  background-color: #936774;
+  color: white;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back.c6 {
+  background-color: #228b22;
+  color: white;
+}
+.aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back .about-answer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 7px;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  width: 75%;
+  font-weight: bold;
+  font-family: 'Great Vibes', cursive;
+}
+@media (max-width: 770px) {
+  .aboutUs .innerpage-content .card-container .flip-card .flip-card-inner .flip-card-back .about-answer {
+    font-size: 2rem;
+  }
+}
+.aboutUs .innerpage-content .card-container .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 body,
 html {
@@ -775,6 +959,15 @@ h1 {
   font-size: 3.5rem;
   color: #936774;
 }
+h1.title-sub {
+  margin-top: 75px;
+}
+h1.sub {
+  display: block;
+  font-size: 2rem;
+  color: #939393;
+  font-family: 'Great Vibes', cursive;
+}
 .border-style1 {
   padding: 20px 7px;
   border: 1px dashed #ddd;
@@ -783,6 +976,9 @@ h1 {
 .border-style1.c1 {
   border: 1px dashed #a57666;
   box-shadow: 0 0 0 3px #fff, 0 0 0 5px #a57666, 0 0 0 10px #fff, 0 0 2px 10px rgba(34, 139, 34, 0.3);
+}
+.cursive {
+  font-family: 'Great Vibes', cursive;
 }
 .btn {
   position: relative;
@@ -997,4 +1193,62 @@ h1 {
 }
 .word .number:hover:after {
   transform: scale(1.08, 1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg, 22deg);
+}
+/* RSVP */
+.rsvp-container {
+  height: 100%;
+  position: relative;
+}
+.rsvp-container.lock:before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(147, 147, 147, 0.5) !important;
+}
+.rsvp-container .rsvp-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  color: #ffffff;
+  background: rgba(50, 50, 50, 0.7);
+  text-align: center;
+}
+.rsvp-container iframe {
+  padding: 50px 0px;
+  width: 100%;
+  height: 1650px;
+  min-height: 100vh;
+}
+.rsvp-container .highlight-img {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.2;
+}
+.rsvp-container .highlight-img.left {
+  left: 0;
+  transform: translateX(-50%);
+}
+.rsvp-container .highlight-img.right {
+  right: 0;
+  transform: translateX(50%);
+}
+.rsvp-container .highlight-img img {
+  width: 100%;
+}
+@media (max-width: 770px) {
+  .rsvp-container .highlight-img {
+    width: initial;
+    height: 50%;
+  }
+  .rsvp-container .highlight-img img {
+    width: initial;
+    height: 100%;
+  }
 }
