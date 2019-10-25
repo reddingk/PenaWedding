@@ -119,6 +119,15 @@ body, html {
 
     .nav-right { margin-right: 20%; @media @mobile-device { margin-right: initial; }}
     .nav-left { margin-left: 20%; @media @mobile-device { margin-left: initial; }}
+
+    .registry-link {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        transform: translateY(-50%);
+
+        @media @mobile-device { position: relative; }
+    }
 }
 
 .footer {
@@ -183,6 +192,16 @@ h1 {
     }
     &.wide { padding: 2px 20px; font-size: .8rem;}
     &:hover { opacity: 1; color: #000;}
+
+    &.nav { 
+        background: rgba(255,255,255,1) !important;
+        opacity: 1;
+        color: @color1;
+        box-shadow: 0 0 0 3px #fff;
+        justify-content: center;
+        
+        &:hover { opacity: 0.6;}
+    }
 }
 
 .brace {

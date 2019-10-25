@@ -61,6 +61,10 @@ class App extends Component{
                                 <Link className="nav-item nav-link" to="/weddingParty">Wedding Party</Link>
                                 <Link className="nav-item nav-link" to="/rsvp">RSVP</Link>
                             </div>
+
+                            <div className="registry-link">
+                                <a href="/#registry" className="btn nav wide">Registry</a>
+                            </div>
                         </div>
                     </nav>
 

@@ -18,6 +18,11 @@ import eg7 from '../assets/imgs/engagement/eg7.JPG';
 import eg8 from '../assets/imgs/engagement/eg8.JPG';
 import eg9 from '../assets/imgs/engagement/eg9.JPG';
 
+import egf1 from '../assets/imgs/engagement/eg-f1.jpg';
+import egf2 from '../assets/imgs/engagement/eg-f2.jpg';
+import egf3 from '../assets/imgs/engagement/eg-f3.jpg';
+import egf4 from '../assets/imgs/engagement/eg-f4.jpg';
+
 class Home extends Component{
     constructor(props) {
         super(props);
@@ -25,7 +30,7 @@ class Home extends Component{
         this.state = {
             scrollDuration: 7000,            
             showThumbs: false,
-            carouselData: [eg1,eg7,eg5]
+            carouselData: [egf1,egf3,egf2,egf4]
         }
     }
 
@@ -135,6 +140,16 @@ class Home extends Component{
                     <div className="date">
                         <span className="number c2" data-number="2">2</span>
                         <span className="number c2" data-number="0">0</span>
+                    </div>
+                </div>
+
+                <div className="section registry" id="registry">
+                    <div className="highlight-img right"><img src={bouquet}></img></div>
+                    <div className="section-content">
+                        <h1>Registry </h1>
+                        <hr className="brace"/>                                             
+                        <p>We thank you for your love, prayers and support. We would greatly appreciate monetary gifts through our cash app <span className="highlightText">$apenawedding</span> or you may donate to our honeymoon fund, link located on our website.  We are excited about starting our new lives together as a married couple and your gift will truly be a blessing.</p>
+                        <p>Thank you and God bless you! ~ Rocio and Jason</p>
                     </div>
                 </div>
             </div>

@@ -55,7 +55,7 @@ class OurWedding extends Component{
                                 
                                 <div className="rsvp-message">To RSVP To Share Our Day With Us Please Mail The Return Note In Your Invitation Or Click Below.</div>
                                 <div className="btn-container">
-                                    <a href="" className="btn light wide">RSVP</a>                              
+                                    <a href="/rsvp" className="btn light wide">RSVP</a>                              
                                 </div>
                             </div>
                         </div>

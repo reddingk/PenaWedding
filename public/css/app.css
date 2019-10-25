@@ -147,6 +147,9 @@
 .home .landing .main-carousel .carousel-img-container {
   display: inline-block;
   width: 55%;
+  max-height: 80vh;
+  position: relative;
+  overflow: hidden;
   background: #ffffff;
   padding: 10px;
 }
@@ -158,6 +161,8 @@
 }
 .home .landing .main-carousel .carousel-img-container .carousel-img {
   width: 100%;
+  object-fit: cover;
+  max-height: calc(80vh - 20px);
 }
 .home .section {
   background: #ffffff;
@@ -214,6 +219,10 @@
   .home .section p {
     font-size: 1.1rem;
   }
+}
+.home .section p .highlightText {
+  color: #a57666;
+  font-weight: bold;
 }
 .home .section .split-section {
   display: flex;
@@ -525,9 +534,12 @@
   box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
   overflow: hidden;
   transition: 0.5s all ease-in-out;
+  height: 46px;
+  width: 46px;
 }
 .weddingParty .party-nav .party-nav-item .img-container img {
-  width: 100%;
+  height: 100%;
+  min-width: 100%;
   object-fit: cover;
 }
 .weddingParty .party-nav.groomsmen .party-title {
@@ -600,7 +612,8 @@
 }
 .weddingParty .party-main .party-main-container .selected-container .split-item.selected-img img {
   width: 100%;
-  object-fit: contain;
+  min-height: 100%;
+  object-fit: cover;
 }
 .weddingParty .party-main .party-main-container .selected-container .split-item.selected-content {
   padding: 0px 10px;
@@ -931,6 +944,17 @@ html {
     margin-left: initial;
   }
 }
+.navbar .registry-link {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+@media (max-width: 770px) {
+  .navbar .registry-link {
+    position: relative;
+  }
+}
 .footer {
   padding: 7px;
   background: #936774;
@@ -1004,6 +1028,16 @@ h1.sub {
 .btn:hover {
   opacity: 1;
   color: #000;
+}
+.btn.nav {
+  background: #ffffff !important;
+  opacity: 1;
+  color: #a57666;
+  box-shadow: 0 0 0 3px #fff;
+  justify-content: center;
+}
+.btn.nav:hover {
+  opacity: 0.6;
 }
 .brace {
   width: auto;

@@ -74,10 +74,17 @@
             .carousel-img-container {
                 display: inline-block;
                 width: 55%;
+                max-height: 80vh;
+                position: relative;
+                overflow: hidden;
                 background: rgba(255,255,255,1);
                 padding: 10px;
                 @media @mobile-device { width: 85%; padding-bottom: 50px; }
-                .carousel-img { width: 100%;}
+                .carousel-img { 
+                    width: 100%;
+                    object-fit: cover;
+                    max-height: calc(80vh - 20px);
+                }
             }
         }
     }
@@ -111,7 +118,12 @@
                 img { width: initial; height: 100%;}
             }
         }
-        p { font-size: 1.3rem; line-height: 2.2rem;  @media @mobile-device { font-size: 1.1rem; }}
+        p { 
+            font-size: 1.3rem; 
+            line-height: 2.2rem;  
+            @media @mobile-device { font-size: 1.1rem; }
+            .highlightText { color: @color1; font-weight: bold;}
+        }
 
         .split-section {
             display: flex;
