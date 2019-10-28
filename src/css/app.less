@@ -126,7 +126,7 @@ body, html {
         right: 2%;
         transform: translateY(-50%);
 
-        @media @mobile-device { position: relative; }
+        @media @mobile-device { position: relative; margin-top: 15px; }
     }
 }
 
@@ -406,6 +406,8 @@ h1 {
         color: rgba(255,255,255,1);
         background: rgba(50,50,50,0.7);
         text-align: center;
+
+        @media @mobile-device { font-size: 2.5rem;}
     }
 
     iframe {
@@ -427,9 +429,7 @@ h1 {
         img { width: 100%;}
 
         @media @mobile-device { 
-            width: initial;
-            height: 50%;
-            img { width: initial; height: 100%;}
+            img { width: 100%;}
         }
     }
 }

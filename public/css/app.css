@@ -238,6 +238,11 @@
 .home .section .split-section .split-content.img {
   width: 40%;
 }
+@media (max-width: 770px) {
+  .home .section .split-section .split-content.img {
+    width: 100%;
+  }
+}
 .home .section .split-section .split-content.text {
   padding: 12px;
   flex: 1;
@@ -562,6 +567,32 @@
 .weddingParty .party-nav.bridesmaid .party-nav-item:hover:not(.selected) .img-container {
   border-color: #936774;
 }
+.weddingParty .party-nav.desktop {
+  display: flex;
+}
+@media (max-width: 770px) {
+  .weddingParty .party-nav.desktop {
+    display: none;
+  }
+}
+.weddingParty .party-nav.mobile {
+  display: none;
+}
+@media (max-width: 770px) {
+  .weddingParty .party-nav.mobile {
+    display: flex;
+  }
+}
+@media (max-width: 770px) {
+  .weddingParty .party-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .weddingParty .party-nav .party-title {
+    width: 100%;
+    text-align: center;
+  }
+}
 .weddingParty .party-main {
   flex: 1;
   overflow: hidden;
@@ -598,6 +629,7 @@
 .weddingParty .party-main .party-main-container {
   text-align: center;
   padding: 5%;
+  position: relative;
 }
 .weddingParty .party-main .party-main-container .selected-container {
   margin-top: 50px;
@@ -629,6 +661,12 @@
   font-size: 1.4rem;
   line-height: 3rem;
 }
+@media (max-width: 770px) {
+  .weddingParty .party-main .party-main-container .selected-container .split-item.selected-content .description {
+    font-size: 1.1rem;
+    line-height: 2rem;
+  }
+}
 .weddingParty .party-main .party-main-container .selected-container.groomsmen h2,
 .weddingParty .party-main .party-main-container .selected-container.groomsmen .sub-title {
   color: #939393;
@@ -636,6 +674,15 @@
 .weddingParty .party-main .party-main-container .selected-container.bridesmaid h2,
 .weddingParty .party-main .party-main-container .selected-container.bridesmaid .sub-title {
   color: #936774;
+}
+@media (max-width: 770px) {
+  .weddingParty .party-main .party-main-container .selected-container {
+    flex-direction: column;
+  }
+  .weddingParty .party-main .party-main-container .selected-container .selected-img {
+    width: 100% !important;
+    margin-bottom: 10px;
+  }
 }
 .weddingParty .party-main .party-main-container .auto-timer {
   margin-top: 30px;
@@ -689,6 +736,11 @@
 }
 .weddingParty .party-main .party-main-container .auto-timer .auto-timer-container:hover .time-ctrl {
   opacity: 0.9;
+}
+@media (max-width: 770px) {
+  .weddingParty {
+    flex-direction: column;
+  }
 }
 .aboutUs .innerpage-content {
   padding: 4% 7%;
@@ -953,6 +1005,7 @@ html {
 @media (max-width: 770px) {
   .navbar .registry-link {
     position: relative;
+    margin-top: 15px;
   }
 }
 .footer {
@@ -1035,6 +1088,7 @@ h1.sub {
   color: #a57666;
   box-shadow: 0 0 0 3px #fff;
   justify-content: center;
+  margin: 0;
 }
 .btn.nav:hover {
   opacity: 0.6;
@@ -1252,6 +1306,11 @@ h1.sub {
   background: rgba(50, 50, 50, 0.7);
   text-align: center;
 }
+@media (max-width: 770px) {
+  .rsvp-container .rsvp-message {
+    font-size: 2.5rem;
+  }
+}
 .rsvp-container iframe {
   padding: 50px 0px;
   width: 100%;
@@ -1277,12 +1336,7 @@ h1.sub {
   width: 100%;
 }
 @media (max-width: 770px) {
-  .rsvp-container .highlight-img {
-    width: initial;
-    height: 50%;
-  }
   .rsvp-container .highlight-img img {
-    width: initial;
-    height: 100%;
+    width: 100%;
   }
 }

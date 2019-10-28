@@ -57,6 +57,15 @@
                 &:hover:not(.selected) {.img-container { border-color: @color5; }}
             }
         }
+
+        &.desktop { display: flex; @media @mobile-device { display: none;}}
+        &.mobile { display: none; @media @mobile-device { display: flex; }}
+
+        @media @mobile-device {
+            flex-direction: row;
+            flex-wrap: wrap;
+            .party-title { width: 100%; text-align: center; }
+        }
     }
     .party-main { 
         flex: 1;
@@ -83,6 +92,7 @@
         .party-main-container {
             text-align: center;
             padding: 5%;
+            position: relative;
 
             .selected-container {
                 margin-top: 50px; 
@@ -90,7 +100,6 @@
                 flex-direction: row;    
 
                 .split-item { 
-                   
                     &.selected-img { 
                         padding: 7px; 
                         border: 1px solid rgba(50,50,50,0.5);
@@ -104,7 +113,7 @@
                         flex:1;
                         h2 { font-size: 4.5rem; }
                         .sub-title { font-size: 1.5rem; }
-                        .description { font-size: 1.4rem; line-height: 3rem; }
+                        .description { font-size: 1.4rem; line-height: 3rem; @media @mobile-device { font-size: 1.1rem; line-height: 2rem;}}
                     }
                 }
 
@@ -113,6 +122,11 @@
                 }
                 &.bridesmaid {
                     h2, .sub-title { color: @color5;}
+                }
+
+                @media @mobile-device {
+                    flex-direction: column;
+                    .selected-img { width: 100% !important; margin-bottom: 10px; }
                 }
             }
 
@@ -165,5 +179,9 @@
                 }
             }
         }
+    }
+
+    @media @mobile-device {
+        flex-direction: column;
     }
 }

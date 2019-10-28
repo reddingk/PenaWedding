@@ -59,6 +59,15 @@ class WeddingParty extends Component{
     render(){  
         return(
             <div className="page-body weddingParty">
+                <div className="party-nav mobile bridesmaid">
+                    <div className="party-title">Bridesmaids</div>
+                    {this.state.bridesmaid.map((item,i) =>(
+                        <div className={"party-nav-item" + (this.state.selectedtype == "bridesmaid" && this.state.bridesmaidSel == i ? " selected" : "")} key={i} onClick={(e) => this.changeSelected(i,"bridesmaid")}>
+                            <div className="img-container"><img src={item.img} /></div>
+                        </div>
+                    ))}
+                </div>
+
                 <div className="party-nav groomsmen">
                     <div className="party-title">Groomsmen</div>
                     {this.state.groomsmen.map((item,i) =>(
@@ -92,8 +101,8 @@ class WeddingParty extends Component{
                         </div>
                     </div>
                 </div>
-                <div className="party-nav bridesmaid">
-                <div className="party-title">Bridesmaids</div>
+                <div className="party-nav desktop bridesmaid">
+                    <div className="party-title">Bridesmaids</div>
                     {this.state.bridesmaid.map((item,i) =>(
                         <div className={"party-nav-item" + (this.state.selectedtype == "bridesmaid" && this.state.bridesmaidSel == i ? " selected" : "")} key={i} onClick={(e) => this.changeSelected(i,"bridesmaid")}>
                             <div className="img-container"><img src={item.img} /></div>
