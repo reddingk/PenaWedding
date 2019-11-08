@@ -57,6 +57,10 @@ class OurWedding extends Component{
                                 <div className="btn-container">
                                     <a href="/rsvp" className="btn light wide">RSVP</a>                              
                                 </div>
+                                <div className="rsvp-message">We hope you find this registry as a way to help us make our perfect honeymoon come true!</div>
+                                <div className="btn-container">
+                                    <a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn light wide">Honeymoon Registry</a>                              
+                                </div>
                             </div>
                         </div>
                         <div className="text-content">

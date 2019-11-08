@@ -63,7 +63,7 @@ class App extends Component{
                             </div>
 
                             <div className="registry-link">
-                                <a href="/#registry" className="btn nav wide">Registry</a>
+                                <a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn nav wide">Registry</a>
                             </div>
                         </div>
                     </nav>

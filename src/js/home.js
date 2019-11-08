@@ -148,8 +148,11 @@ class Home extends Component{
                     <div className="section-content">
                         <h1>Registry </h1>
                         <hr className="brace"/>                                             
-                        <p>We thank you for your love, prayers and support. We would greatly appreciate monetary gifts through our cash app <span className="highlightText">$apenawedding</span> or you may donate to our honeymoon fund, link located on our website.  We are excited about starting our new lives together as a married couple and your gift will truly be a blessing.</p>
-                        <p>Thank you and God bless you! ~ Rocio and Jason</p>
+                        <p>We are heading to the Aruba for our honeymoon and plan to do a little sightseeing, a little eating, a little swimming, a little snorkeling, and a little nothing - enjoying a true break from spreadsheets, databases, and counseling ;). We hope you find this registry as a way to help us make our perfect honeymoon come true!</p>
+                        
+                        <div className="btn-container">
+                            <a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn light wide">Honeymoon Registry</a>                              
+                        </div>                        
                     </div>
                 </div>
             </div>

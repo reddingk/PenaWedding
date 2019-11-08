@@ -31,12 +31,12 @@ class AboutUs extends Component{
                             <div className="flip-card sz10">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <div className="about-question">Who was the first to speak?</div>
+                                        <div className="about-question">Who forgot their one year anniversary?</div>
                                         <img src={eg2} alt="img2" />                                
                                     </div>
 
                                     <div class="flip-card-back c1">
-                                        <div className="about-answer">Jason</div>                                        
+                                        <div className="about-answer">Rocio</div>                                        
                                     </div>
                                 </div>
                             </div>
@@ -44,12 +44,12 @@ class AboutUs extends Component{
                             <div className="flip-card sz5">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <div className="about-question">Who likes to cook more?</div>
+                                        <div className="about-question">Who likes to listen to Selena when cooking on Tacos Tuesdays?</div>
                                         <img src={eg3} alt="img3" />                                
                                     </div>
 
                                     <div class="flip-card-back c2">
-                                        <div className="about-answer">Rocio</div>                                       
+                                        <div className="about-answer">Jason</div>                                       
                                     </div>
                                 </div>
                             </div>
@@ -57,22 +57,23 @@ class AboutUs extends Component{
                             <div className="flip-card sz5">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <div className="about-question">What is a perfect day for Jason?</div>
+                                        <div className="about-question">Who has a bigger sweet tooth?</div>
                                         <img src={eg7} alt="img7" />                                
                                     </div>
 
                                     <div class="flip-card-back c3">
-                                        <div className="about-answer">Sleeping & Making Pasta</div>  
+                                        <div className="about-answer">Jason</div>  
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                        {/* Row 2 */}
                         <div className="card-row">                            
                             <div className="flip-card sz5">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <div className="about-question">Who likes to cook more?</div>
+                                        <div className="about-question">Who has the most siblings?</div>
                                         <img src={eg4} alt="img4" />                                
                                     </div>
 
@@ -85,12 +86,12 @@ class AboutUs extends Component{
                             <div className="flip-card sz5">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <div className="about-question">What is a perfect day for Rocio?</div>
+                                        <div className="about-question">Who puts Hot Sauce on Everything?</div>
                                         <img src={eg1} alt="img1" />                                
                                     </div>
 
                                     <div class="flip-card-back c5">
-                                        <div className="about-answer">Making Music</div>  
+                                        <div className="about-answer">Jason</div>  
                                     </div>
                                 </div>
                             </div>
@@ -98,12 +99,41 @@ class AboutUs extends Component{
                             <div className="flip-card sz10">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <div className="about-question">Where was our first date?</div>
+                                        <div className="about-question">Who enjoys dancing more?</div>
                                         <img src={eg6} alt="img6" />                                
                                     </div>
 
                                     <div class="flip-card-back c6">
-                                        <div className="about-answer">The Movies</div>                                        
+                                        <div className="about-answer">Rocio</div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Row 3 */}
+                        <div className="card-row">
+                            <div className="flip-card sz10">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div className="about-question">Who likes to drink Rum ?</div>
+                                        <img src={eg9} alt="img2" />                                
+                                    </div>
+
+                                    <div class="flip-card-back c1">
+                                        <div className="about-answer">Jason</div>                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="flip-card sz5">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <div className="about-question">Who is the bigger Wine Lover?</div>
+                                        <img src={eg5} alt="img3" />                                
+                                    </div>
+
+                                    <div class="flip-card-back c2">
+                                        <div className="about-answer">Rocio</div>                                       
                                     </div>
                                 </div>
                             </div>
