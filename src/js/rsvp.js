@@ -8,7 +8,7 @@ class RSVP extends Component{
         super(props);
 
         this.state = {
-            lock: true
+            lock: false
         }
     }
 
