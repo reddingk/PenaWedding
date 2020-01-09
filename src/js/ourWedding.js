@@ -35,16 +35,6 @@ class OurWedding extends Component{
                     </div>
 
                     <div className="content-section">                        
-                        {/*<Carousel className="site-carousel back-carousel" showThumbs={false} showArrows={false} showStatus={false} showIndicators={false} interval={this.state.scrollDuration} infiniteLoop autoPlay>
-                            {this.state.images.map((item, i) => 
-                                <div className="img-page" key={i}>
-                                    <div className="carousel-img-container">
-                                        <img className="carousel-img" src={item}></img>
-                                    </div>
-                                </div>
-                            )}
-                        </Carousel>*/}
-
                         <div className="text-content">
                             <div className="inner-container">
                                 <p className="fontStyle1">Birch Wood Vineyards</p>
@@ -57,6 +47,7 @@ class OurWedding extends Component{
                                 <div className="btn-container">
                                     <a href="/rsvp" className="btn light wide">RSVP</a>                              
                                 </div>
+
                                 <div className="rsvp-message">We hope you find this registry as a way to help us make our perfect honeymoon come true!</div>
                                 <div className="btn-container">
                                     <a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn light wide">Honeymoon Registry</a>                              
@@ -74,7 +65,13 @@ class OurWedding extends Component{
                                 <p>5:00pm</p>
 
                                 <p>Reception</p>
-                                <p>6:00 PM</p>                                
+                                <p>6:00 PM</p>   
+
+                                <h2>Hotel Information</h2>
+                                <div className="rsvp-message">For our guest from outside the area we have special hotel rates at <b>La Quinta Inn & Suites by Wyndham Salem NH</b></div>
+                                <div className="btn-container">
+                                    <a href="https://www.wyndhamhotels.com/laquinta/salem-new-hampshire/la-quinta-salem-nh/rooms-rates?&checkInDate=04/26/2020&checkOutDate=04/28/2020&groupCode=CGMEPE" target="_blank" className="btn light wide">Reserve A Room</a>                              
+                                </div>                             
                             </div>
                         </div>
                     </div>
