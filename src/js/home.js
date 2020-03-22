@@ -50,7 +50,7 @@ class Home extends Component{
                             <span className="name2">Rocio</span>
                         </div>
                         <div className="line md"><span>ARE GETTING MARRIED</span></div>
-                        <div className="line md"><span>04.27.2020</span></div>
+                        <div className="line md"><span>08.27.2020</span></div>
                     </div>
                 </div>
 
@@ -71,7 +71,7 @@ class Home extends Component{
                     </div>
                     <div className="date">
                         <span className="number c2" data-number="0">0</span>
-                        <span className="number c2" data-number="4">4</span>
+                        <span className="number c2" data-number="8">8</span>
                     </div>
                 </div>
 

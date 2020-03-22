@@ -50,10 +50,16 @@ body, html {
 }
 *:focus { outline: none;}
 
+.navbar-container {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
 .navbar {        
     z-index: 100;
     background: @color5 !important;
-    position: fixed;
+    //position: fixed;
+    position: relative;
     width: 100%;
     -webkit-box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
 	   -moz-box-shadow: 0 10px 6px -6px rgba(50,50,50,0.5);
@@ -145,6 +151,7 @@ body, html {
     min-height: 100vh;
     padding-top: @navHeight;
 
+    &.activeAlert { padding-top: 175px; }
     @media @mobile-device { padding-top: @mobileNavHeight;}
 }
 h1 { 
@@ -432,4 +439,20 @@ h1 {
             img { width: 100%;}
         }
     }
+}
+
+/* Alert */
+.alert {
+    position: relative;
+    z-index: 99;
+    width: 100%;
+    margin:0;
+    h1 { font-size: 1.5rem; text-align: center;}
+    p { font-size: 1.15rem; }
+    b { color: @color5; }
+    button { 
+        font-size: 30px; color: @color5 !important; 
+    }
+
+    @media @mobile-device { text-align: left; }
 }

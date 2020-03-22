@@ -50,7 +50,7 @@ class OurWedding extends Component{
                                 <p className="fontStyle1">Birch Wood Vineyards</p>
                                 <p>199 Rockingham Rd., Derry, NH. 03038</p>
                                 <h2>Ceremony</h2>
-                                <p>Monday, April 27, 2020</p>
+                                <p>Thursday, August 27, 2020</p>
                                 <p>4:00 PM</p>  
                                 
                                 <div className="rsvp-message">To RSVP To Share Our Day With Us Please Mail The Return Note In Your Invitation Or Click Below.</div>

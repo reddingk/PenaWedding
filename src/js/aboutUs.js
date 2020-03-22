@@ -7,7 +7,6 @@ import eg4 from '../assets/imgs/engagement/eg4.JPG';
 import eg5 from '../assets/imgs/engagement/eg5.JPG';
 import eg6 from '../assets/imgs/engagement/eg6.JPG';
 import eg7 from '../assets/imgs/engagement/eg7.JPG';
-import eg8 from '../assets/imgs/engagement/eg8.JPG';
 import eg9 from '../assets/imgs/engagement/eg9.JPG';
 
 class AboutUs extends Component{

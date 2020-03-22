@@ -902,10 +902,15 @@ html {
 *:focus {
   outline: none;
 }
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
 .navbar {
   z-index: 100;
   background: #936774 !important;
-  position: fixed;
+  position: relative;
   width: 100%;
   -webkit-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
   -moz-box-shadow: 0 10px 6px -6px rgba(50, 50, 50, 0.5);
@@ -1025,6 +1030,9 @@ html {
 .page-body {
   min-height: 100vh;
   padding-top: 59px;
+}
+.page-body.activeAlert {
+  padding-top: 175px;
 }
 @media (max-width: 770px) {
   .page-body {
@@ -1338,5 +1346,31 @@ h1.sub {
 @media (max-width: 770px) {
   .rsvp-container .highlight-img img {
     width: 100%;
+  }
+}
+/* Alert */
+.alert {
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  margin: 0;
+}
+.alert h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.alert p {
+  font-size: 1.15rem;
+}
+.alert b {
+  color: #936774;
+}
+.alert button {
+  font-size: 30px;
+  color: #936774 !important;
+}
+@media (max-width: 770px) {
+  .alert {
+    text-align: left;
   }
 }
