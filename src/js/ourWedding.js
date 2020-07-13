@@ -79,7 +79,7 @@ class OurWedding extends Component{
                                 <h2>Hotel Information</h2>
                                 <div className="rsvp-message">For our guest from outside the area we have special hotel rates at <b>La Quinta Inn & Suites by Wyndham Salem NH</b></div>
                                 <div className="btn-container">
-                                    <a href="https://www.wyndhamhotels.com/laquinta/salem-new-hampshire/la-quinta-salem-nh/rooms-rates?&checkInDate=04/26/2020&checkOutDate=04/28/2020&groupCode=CGMEPE" target="_blank" className="btn light wide">Reserve A Room</a>                              
+                                    <a href="http://www.wyndhamhotels.com/hotels/52938?checkInDate=08/26/2020&checkOutDate=08/28/2020&groupCode=CGMEJI" target="_blank" className="btn light wide">Reserve A Room</a>                              
                                 </div>                                  
                             </div>
                         </div>
