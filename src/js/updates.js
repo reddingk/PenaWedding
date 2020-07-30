@@ -24,7 +24,7 @@ class Updates extends Component{
                         <div className="update-item">
                             <h3>Face Coverings</h3>
                             <p>We are excited about our upcoming day, As you prepare to celebrate with us we are asking all guests to <b>please bring a face covering</b> with them to the ceremony.  As it will not be manditory during the ceremony we would like all of our guest to be prepared with one to comply with changing regulations. </p>
-                            <p>We have also been assured that the venue is been doing an amazing job keeping a clean and safe venue for all events and guests.  If you have any questions or concerns please feel free to contact either one of us. </p>
+                            <p>We have also been assured that the venue has been doing an amazing job keeping a clean and safe venue for all events and guests.  If you have any questions or concerns please feel free to contact either one of us. </p>
                         </div>
 
                         <div className="update-item">
