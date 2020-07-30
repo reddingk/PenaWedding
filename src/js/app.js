@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 /* Components */
-import UC from './uc';
+//import UC from './uc';
 import Home from './home';
 import OurWedding from './ourWedding';
 import WeddingParty from './weddingParty';
 import RSVP from './rsvp';
 import AboutUs from './aboutUs';
+import Updates from './updates';
 
 /* Styles */
 import "../css/app.less";
@@ -16,7 +17,8 @@ const routes = [
     { path:"/aboutUs", component:AboutUs},
     { path:"/ourWedding", component:OurWedding },
     { path:"/weddingParty", component:WeddingParty },
-    { path:"/rsvp", component:RSVP }    
+    { path:"/rsvp", component:RSVP },
+    { path:"/updates", component:Updates }     
 ];
 
 const SiteRoutes = route => (
@@ -41,12 +43,8 @@ class App extends Component{
                     <div className="navbar-container">
                         {/* ALERT */}
                         <div className="alert alert-light alert-dismissible fade show" role="alert">
-                            <h1>Wedding Announcement</h1>
-                            <p>
-                                Unfortionately due to what has taken place with the COVID-19 pandemic we have had to <b>Postpone</b> our wedding celebration.
-                                We will be moving our wedding from Monday April 27, 2020 to <b>Thursday August 27, 2020</b>.  If you are unable to attend due to this date change please
-                                let us know to help us plan accordingly.
-                            </p>
+                            <h1>Wedding Procedures</h1>
+                            <p>We are excited about our upcoming day and to keep all information avaliable we have created a <Link className="update-link" to="/updates">Wedding Updates</Link> page to help keep all updated on the ever changing Covid-19 situation.</p>
                             <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -80,7 +78,8 @@ class App extends Component{
                                 </div>
 
                                 <div className="registry-link">
-                                    <a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn nav wide">Registry</a>
+                                    {/*<a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn nav wide">Registry</a>*/}
+                                    <Link className="btn nav wide" to="/updates">Wedding Updates</Link>
                                 </div>
                             </div>
                         </nav>

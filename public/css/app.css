@@ -10,7 +10,7 @@
   font-family: 'BioRhyme';
   font-style: normal;
   font-weight: 400;
-  src: local('BioRhyme'), local('BioRhyme-Regular'), url(https://fonts.gstatic.com/s/biorhyme/v4/1cXwaULHBpDMsHYW_ExBr1E.ttf) format('truetype');
+  src: local('BioRhyme'), local('BioRhyme-Regular'), url(https://fonts.gstatic.com/s/biorhyme/v5/1cXwaULHBpDMsHYW_ExBr1E.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Cormorant Garamond';
@@ -34,19 +34,19 @@
   font-family: 'Inknut Antiqua';
   font-style: normal;
   font-weight: 400;
-  src: local('Inknut Antiqua Regular'), local('InknutAntiqua-Regular'), url(https://fonts.gstatic.com/s/inknutantiqua/v5/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4Jg.ttf) format('truetype');
+  src: local('Inknut Antiqua Regular'), local('InknutAntiqua-Regular'), url(https://fonts.gstatic.com/s/inknutantiqua/v6/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4Jg.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Kristi';
   font-style: normal;
   font-weight: 400;
-  src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v11/uK_y4ricdeU6zwdhDRcX.ttf) format('truetype');
+  src: local('Kristi Regular'), local('Kristi-Regular'), url(https://fonts.gstatic.com/s/kristi/v12/uK_y4ricdeU6zwdhDRcX.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Monsieur La Doulaise';
   font-style: normal;
   font-weight: 400;
-  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v8/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZm5ZyEU.ttf) format('truetype');
+  src: local('Monsieur La Doulaise Regular'), local('MonsieurLaDoulaise-Regular'), url(https://fonts.gstatic.com/s/monsieurladoulaise/v9/_Xmz-GY4rjmCbQfc-aPRaa4pqV340p7EZm5ZyEU.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Pinyon Script';
@@ -58,7 +58,7 @@
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
-  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v9/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
+  src: local('Poppins Light'), local('Poppins-Light'), url(https://fonts.gstatic.com/s/poppins/v12/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
 }
 .home .landing {
   width: 100%;
@@ -1348,6 +1348,53 @@ h1.sub {
     width: 100%;
   }
 }
+/* Updates Page */
+.updates .highlight-img {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0.2;
+}
+.updates .highlight-img.left {
+  left: 0;
+  transform: translateX(-50%);
+}
+.updates .highlight-img.right {
+  right: 0;
+  transform: translateX(50%);
+}
+.updates .highlight-img img {
+  width: 100%;
+}
+@media (max-width: 770px) {
+  .updates .highlight-img img {
+    width: 100%;
+  }
+}
+.updates .innerpage-content {
+  padding: 4% 7%;
+}
+.updates .innerpage-content .content-header {
+  padding: 0px 30px;
+  text-align: center;
+}
+.updates .innerpage-content .update-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+.updates .innerpage-content .update-container .update-item {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 1.15rem;
+  background: rgba(147, 147, 147, 0.2) !important;
+}
+.updates .innerpage-content .update-container .update-item b {
+  color: #936774;
+}
 /* Alert */
 .alert {
   position: relative;
@@ -1364,6 +1411,10 @@ h1.sub {
 }
 .alert b {
   color: #936774;
+}
+.alert a {
+  color: #936774;
+  text-decoration: underline;
 }
 .alert button {
   font-size: 30px;

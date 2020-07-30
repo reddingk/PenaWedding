@@ -139,7 +139,7 @@ class Home extends Component{
                     <div className="section-content">
                         <h1>Registry </h1>
                         <hr className="brace"/>                                             
-                        <p>We are heading to Jamaica for our honeymoon and plan to do a little sightseeing, a little eating, a little swimming, a little snorkeling, and a little nothing - enjoying a true break from spreadsheets, databases, and counseling ;). We hope you find this registry as a way to help us make our perfect honeymoon come true!</p>
+                        <p>As you can imagine with the current state of things we are not sure when we will be able to take our honeymoon,  So to help us plan for our future trip we are accepting cash in addition to the travelers joy to help make our evential trip great when things do open back up safely.</p>
                         
                         <div className="btn-container">
                             <a href="https://www.travelersjoy.com/apenawedding" target="_blank" className="btn light wide">Honeymoon Registry</a>                              
